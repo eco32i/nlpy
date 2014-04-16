@@ -1,0 +1,669 @@
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+1	RpoC(87)-RpoC(50)	0	0	2	0	6	0	6	2	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2271 scans: 15780	GVICEKCGVEVTQTK(5)-TFKPERDGLFCAR(2):0	1.18e-013	3468.720124	-0.000410	-0.118165	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);25,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(50)
+	2	File1577 Spectrum2340 scans: 15909	GVICEKCGVEVTQTK(5)-TFKPERDGLFCAR(2):0	3.04e-012	3468.720124	0.009690	2.792719	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);25,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(50)
+	3	File1577 Spectrum2339 scans: 15908	GVICEKCGVEVTQTK(5)-TFKPERDGLFCAR(2):0	1.18e-010	3468.720124	0.009690	2.792719	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);25,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(50)
+	4	File1577 Spectrum2223 scans: 15687	GVICEKCGVEVTQTK(5)-TFKPERDGLFCAR(2):0	7.28e-008	3468.720124	4.005650	1153.125454	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);25,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(50)
+	5	File1577 Spectrum2203 scans: 15655	GVICEKCGVEVTQTK(5)-TFKPERDGLFCAR(2):0	2.74e-006	3468.720124	-0.001910	-0.550476	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);25,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(50)
+	6	File1577 Spectrum1415 scans: 14011	GVICEKCGVEVTQTK(5)-TFKPER(2):0	1.41e-004	2649.350384	1.009670	380.811059	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(50)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+2	RpoB(161)-RpoC(781)	0	0	2	0	4	4	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1436 scans: 14090	SPGVFFDSDKGKTHSSGK(9)-KGLADTALK(0):0	3.65e-010	2961.544514	-0.001860	-0.627838	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(781)
+	2	File1577 Spectrum1482 scans: 14204	SPGVFFDSDKGKTHSSGK(9)-KGLADTALK(0):0	1.70e-005	2961.544514	0.006950	2.345945	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(781)
+	3	File1577 Spectrum1429 scans: 14067	SPGVFFDSDKGKTHSSGK(9)-KGLADTALK(0):0	2.21e-005	2961.544514	0.003250	1.097026	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(781)
+	4	File1577 Spectrum3118 scans: 17412	SPGVFFDSDKGK(9)-KGLADTALK(0):0	5.26e-005	2364.257444	-0.002150	-0.908990	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+3	RpoC(996)-RpoC(964)	0	0	2	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1877 scans: 15046	TKESYKVPYGAVLAK(5)-LSNVKSVVNSSGK(4):0	1.95e-007	3136.738144	1.004230	319.945874	null	1.pFind	1.pFind	0	-1	1	RpoC(996)-RpoC(964)
+	2	File1577 Spectrum2679 scans: 16556	ESYKVPYGAVLAK(3)-LSNVKSVVNSSGK(4):0	3.26e-005	2907.595504	1.006990	346.091084	null	1.pFind	1.pFind	0	-1	1	RpoC(996)-RpoC(964)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+4	RpoB(439)-RpoB(431)	0	0	2	0	7	7	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2452 scans: 16132	NGKGEVDDIDHLGNRR(2)-KLIDIR(0):0	1.48e-007	2716.461794	0.984970	362.327259	null	1.pFind	1.pFind	0	-1	1	RpoB(439)-RpoB(431)
+	2	File1577 Spectrum2538 scans: 16285	NGKGEVDDIDHLGNR(2)-KLIDIR(0):0	2.09e-007	2560.360684	1.011330	394.683958	null	1.pFind	1.pFind	0	-1	1	RpoB(439)-RpoB(431)
+	3	File1577 Spectrum1912 scans: 15127	NGKGEVDDIDHLGNRR(2)-KLIDIR(0):0	9.55e-007	2716.461794	0.005710	2.101215	null	1.pFind	1.pFind	0	-1	1	RpoB(439)-RpoB(431)
+	4	File1577 Spectrum1980 scans: 15255	NGKGEVDDIDHLGNRR(2)-KLIDIR(0):0	7.85e-006	2716.461794	0.999610	367.710692	null	1.pFind	1.pFind	0	-1	1	RpoB(439)-RpoB(431)
+	5	File1577 Spectrum1845 scans: 15000	NGKGEVDDIDHLGNRR(2)-KLIDIR(0):0	1.87e-005	2716.461794	-0.003590	-1.321084	null	1.pFind	1.pFind	0	-1	1	RpoB(439)-RpoB(431)
+	6	File1577 Spectrum3199 scans: 17553	NGKGEVDDIDHLGNR(2)-KLIDIR(0):0	2.80e-005	2560.360684	0.984780	384.326476	null	1.pFind	1.pFind	0	-1	1	RpoB(439)-RpoB(431)
+	7	File1577 Spectrum1917 scans: 15137	NGKGEVDDIDHLGNRR(2)-KLIDIR(0):0	1.17e-004	2716.461794	0.007140	2.627438	null	1.pFind	1.pFind	0	-1	1	RpoB(439)-RpoB(431)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+5	RpoB(161)-RpoC(789)	0	0	2	0	4	4	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2120 scans: 15471	SPGVFFDSDKGKTHSSGK(9)-KGLADTALKTANSGYLTR(8):0	1.78e-010	3925.021904	3.015160	767.402895	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(789)
+	2	File1577 Spectrum2630 scans: 16469	SPGVFFDSDKGKTHSSGK(9)-GLADTALKTANSGYLTR(7):0	1.71e-005	3796.926944	1.996320	525.356971	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(789)
+	3	File1577 Spectrum2084 scans: 15416	SPGVFFDSDKGKTHSSGK(9)-KGLADTALKTANSGYLTR(8):0	1.76e-004	3925.021904	2.012800	512.418149	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(789)
+	4	File1577 Spectrum2010 scans: 15294	SPGVFFDSDKGKTHSSGK(9)-KGLADTALKTANSGYLTR(8):0	5.19e-004	3925.021904	0.000460	0.117167	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(789)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+6	RpoB(1065)-RpoB(1073)	0	0	2	0	5	5	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum662 scans: 11511	IQPGDKMAGR(5)-HGNKGVISK(3):0	4.54e-006	2176.178444	0.004850	2.227641	null	1.pFind	1.pFind	0	-1	1	RpoB(1065)-RpoB(1073)
+	2	File1577 Spectrum622 scans: 11273	IQPGDKMAGR(5)-HGNKGVISK(3):0	4.23e-005	2176.178444	-0.001510	-0.693556	null	1.pFind	1.pFind	0	-1	1	RpoB(1065)-RpoB(1073)
+	3	File1577 Spectrum677 scans: 11590	RIQPGDKMAGR(6)-HGNKGVISK(3):0	2.00e-004	2332.279554	-0.003740	-1.602892	null	1.pFind	1.pFind	0	-1	1	RpoB(1065)-RpoB(1073)
+	4	File1577 Spectrum644 scans: 11392	IQPGDKMAGR(5)-HGNKGVISK(3):0	3.76e-004	2176.178444	-0.000270	-0.124013	null	1.pFind	1.pFind	0	-1	1	RpoB(1065)-RpoB(1073)
+	5	File1577 Spectrum666 scans: 11535	RIQPGDKMAGR(6)-HGNKGVISK(3):0	9.41e-004	2332.279554	2.011760	861.457292	null	1.pFind	1.pFind	0	-1	1	RpoB(1065)-RpoB(1073)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+7	RpoB(1133)-RpoB(1178)	0	0	2	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4534 scans: 20073	GIGDKINAMLKQQQEVAK(10)-KGMPIATPVFDGAK(0):0	1.41e-009	3566.920204	2.991510	837.742331	null	1.pFind	1.pFind	0	-1	1	RpoB(1133)-RpoB(1178)
+	2	File1577 Spectrum4544 scans: 20095	GIGDKINAMLKQQQEVAK(10)-KGMPIATPVFDGAK(0):0	1.85e-008	3566.920204	0.988960	277.103714	null	1.pFind	1.pFind	0	-1	1	RpoB(1133)-RpoB(1178)
+	3	File1577 Spectrum3012 scans: 17189	INAMLKQQQEVAK(5)-KGMPIATPVFDGAK(0):0	4.81e-004	3096.671324	0.995370	321.224501	null	1.pFind	1.pFind	0	-1	1	RpoB(1133)-RpoB(1178)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+8	RpoC(557)-RpoC(603)	0	0	2	0	6	0	6	2	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1893 scans: 15078	ITEYEKDANGELVAK(5)-KAISKMLNTCYR(4):0	7.93e-010	3328.704474	3.012020	903.771272	24,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(603)
+	2	File1577 Spectrum1881 scans: 15055	ITEYEKDANGELVAK(5)-KAISKMLNTCYR(4):0	5.48e-007	3328.704474	2.011390	603.708626	24,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(603)
+	3	File1577 Spectrum1905 scans: 15104	ITEYEKDANGELVAK(5)-KAISKMLNTCYR(4):0	8.55e-007	3328.704474	0.005490	1.648789	24,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(603)
+	4	File1577 Spectrum1951 scans: 15208	ITEYEKDANGELVAK(5)-KAISKMLNTCYR(4):0	5.29e-006	3328.704474	3.002740	900.989271	24,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(603)
+	5	File1577 Spectrum2535 scans: 16280	ITEYEKDANGELVAK(5)-AISKMLNTCYR(3):0	2.15e-004	3200.609514	-0.009220	-2.879803	23,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(603)
+	6	File1577 Spectrum2555 scans: 16317	ITEYEKDANGELVAK(5)-AISKMLNTCYR(3):0	2.46e-004	3200.609514	2.002100	624.949493	23,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(603)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+9	RpoC(983)-RpoC(959)	0	0	2	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3598 scans: 18336	NTELKLIDEFGR(4)-GSIKLSNVK(3):0	2.24e-004	2544.416084	0.995970	391.125683	null	1.pFind	1.pFind	0	-1	1	RpoC(983)-RpoC(959)
+	2	File1577 Spectrum3523 scans: 18201	NTELKLIDEFGR(4)-GSIKLSNVK(3):0	6.28e-004	2544.416084	-0.004270	-1.677523	null	1.pFind	1.pFind	0	-1	1	RpoC(983)-RpoC(959)
+	3	File1577 Spectrum2720 scans: 16633	NTELKLIDEFGR(4)-NKGSIKLSNVK(5):0	9.91e-004	2786.553974	0.017240	6.184579	null	1.pFind	1.pFind	0	-1	1	RpoC(983)-RpoC(959)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+10	RpoC(789)-RpoB(163)	0	0	2	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1344 scans: 13825	GLADTALKTANSGYLTR(7)-GKTHSSGK(1):0	5.29e-006	2717.434594	0.008460	3.112067	null	1.pFind	1.pFind	0	-1	1	RpoC(789)-RpoB(163)
+	2	File1577 Spectrum1144 scans: 13250	KGLADTALKTANSGYLTR(8)-GKTHSSGK(1):0	7.80e-005	2845.529554	-0.001340	-0.470748	null	1.pFind	1.pFind	0	-1	1	RpoC(789)-RpoB(163)
+	3	File1577 Spectrum1117 scans: 13174	KGLADTALKTANSGYLTR(8)-GKTHSSGK(1):0	2.89e-004	2845.529554	1.993560	699.855619	null	1.pFind	1.pFind	0	-1	1	RpoC(789)-RpoB(163)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+11	RpoC(39)-RpoC(50)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2343 scans: 15915	SWSFGEVKKPETINYR(7)-TFKPER(2):0	7.07e-004	2882.496464	1.002900	347.685107	null	1.pFind	1.pFind	0	-1	1	RpoC(39)-RpoC(50)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+12	RpoC(66)-RpoB(914)	0	0	1	0	4	0	4	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3094 scans: 17355	IFGPVKDYECLCGK(5)-ASDVKDSSLR(4):0	1.65e-006	2927.440644	1.004610	342.934384	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoB(914)
+	2	File1577 Spectrum3100 scans: 17367	IFGPVKDYECLCGK(5)-ASDVKDSSLR(4):0	8.88e-006	2927.440644	0.005570	1.902028	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoB(914)
+	3	File1577 Spectrum3169 scans: 17499	IFGPVKDYECLCGK(5)-ASDVKDSSLR(4):0	1.60e-005	2927.440644	1.003130	342.429344	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoB(914)
+	4	File1577 Spectrum3170 scans: 17500	IFGPVKDYECLCGK(5)-ASDVKDSSLR(4):0	1.60e-004	2927.440644	-0.009310	-3.179169	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+13	RpoC(395)-RpoC(334)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum624 scans: 11283	GLATTIKAAK(6)-GKQGR(1):0	3.56e-005	1683.004094	0.001360	0.807595	null	1.pFind	1.pFind	0	-1	1	RpoC(395)-RpoC(334)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+14	RpoC(521)-RpoA(1)	0	0	1	0	2	0	2	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4658 scans: 20263	DCVNAKGEGMVLTGPK(5)-MQGSVTEFLKPR(0):0	6.72e-012	3232.629194	-0.002300	-0.711274	1,D(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(521)-RpoA(1)
+	2	File1577 Spectrum4642 scans: 20239	DCVNAKGEGMVLTGPK(5)-MQGSVTEFLKPR(0):0	2.40e-007	3232.629194	1.004170	310.442523	1,D(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(521)-RpoA(1)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+15	RpoC(531)-RpoC(570)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2192 scans: 15638	GEGMVLTGPKEAER(9)-TSLKDTTVGR(3):0	1.08e-008	2715.411074	-0.008060	-2.967151	null	1.pFind	1.pFind	0	-1	1	RpoC(531)-RpoC(570)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+16	RpoC(557)-RpoC(531)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2495 scans: 16214	ITEYEKDANGELVAK(5)-GEGMVLTGPKEAER(9):0	1.10e-004	3317.669844	1.005410	302.863298	null	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(531)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+17	RpoC(557)-RpoC(570)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2147 scans: 15531	ITEYEKDANGELVAK(5)-TSLKDTTVGR(3):0	3.73e-008	2921.523124	2.008810	686.880857	null	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(570)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+18	RpoC(557)-RpoC(781)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2336 scans: 15902	ITEYEKDANGELVAK(5)-KGLADTALK(0):0	1.41e-005	2760.479454	3.006080	1087.389336	null	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(781)
+	2	File1577 Spectrum2333 scans: 15897	ITEYEKDANGELVAK(5)-KGLADTALK(0):0	5.62e-005	2760.479454	0.002160	0.782187	null	1.pFind	1.pFind	0	-1	1	RpoC(557)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+19	RpoC(570)-RpoC(599)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum723 scans: 11859	TSLKDTTVGR(3)-KAISK(0):0	1.98e-004	1788.035464	-0.000490	-0.273890	null	1.pFind	1.pFind	0	-1	1	RpoC(570)-RpoC(599)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+20	RpoC(598)-REVERSE_RpoC(859)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2993 scans: 17148	GLPYSIVNQALGKK(12)-VKVR(1):0	1.72e-006	2153.293394	0.002940	1.364710	null	1.pFind	1.pFind	0	-1	1	RpoC(598)-REVERSE_RpoC(859)/RpoC(598)-RpoC(549)
+	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+SameSet	RpoC(598)-RpoC(549)	0	0	1	0	1	1	0	0	null
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+21	RpoC(66)-RpoB(890)	0	0	1	0	2	0	2	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2963 scans: 17078	IFGPVKDYECLCGK(5)-VTPKGETQLTPEEK(3):0	5.65e-009	3406.703784	1.002230	294.020035	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoB(890)
+	2	File1577 Spectrum2925 scans: 17004	IFGPVKDYECLCGK(5)-VTPKGETQLTPEEK(3):0	5.76e-006	3406.703784	3.009310	882.309211	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoB(890)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+22	RpoC(66)-RpoB(900)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4429 scans: 19848	IFGPVKDYECLCGK(5)-GETQLTPEEKLLR(9):0	1.47e-004	3363.709204	1.995570	592.735574	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoB(900)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+23	RpoC(1132)-RpoC(1251)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2557 scans: 16319	IPQESGGTKDITGGLPR(8)-INDKHIEVIVR(3):0	7.49e-012	3225.771884	1.007830	312.235598	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(1251)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+24	RpoC(1263)-RpoC(1286)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2494 scans: 16213	KATIVNAGSSDFLEGEQVEYSR(0)-VKIANR(1):0	1.43e-004	3264.698794	0.991820	303.615465	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1286)
+	2	File1577 Spectrum2488 scans: 16202	KATIVNAGSSDFLEGEQVEYSR(0)-VKIANR(1):0	2.53e-004	3264.698794	1.987420	608.202699	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1286)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+25	RpoC(1132)-RpoB(161)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3359 scans: 17876	IPQESGGTKDITGGLPR(8)-SPGVFFDSDKGK(9):0	3.17e-004	3173.624214	0.001720	0.541795	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoB(161)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+26	RpoC(1132)-RpoC(781)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2563 scans: 16329	IPQESGGTKDITGGLPR(8)-KGLADTALK(0):0	1.37e-006	2806.543784	0.004510	1.606380	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+27	RpoC(1132)-RpoC(964)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2195 scans: 15644	IPQESGGTKDITGGLPR(8)-LSNVKSVVNSSGK(4):0	5.75e-010	3208.730094	2.006920	624.869174	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(964)
+	2	File1577 Spectrum2206 scans: 15658	IPQESGGTKDITGGLPR(8)-LSNVKSVVNSSGK(4):0	1.03e-008	3208.730094	2.011320	626.238288	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(964)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+28	RpoC(1132)-RpoC(996)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2439 scans: 16109	IPQESGGTKDITGGLPR(8)-TKESYKVPYGAVLAK(5):0	8.65e-012	3543.918604	1.008110	284.300273	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(996)
+	2	File1577 Spectrum2436 scans: 16104	IPQESGGTKDITGGLPR(8)-TKESYKVPYGAVLAK(5):0	2.96e-008	3543.918604	4.002160	1127.709538	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(996)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+29	RpoC(1151)-RpoC(1132)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum6663 scans: 23397	RPKEPAILAEISGIVSFGK(2)-IPQESGGTKDITGGLPR(8):0	2.83e-010	3902.151434	-0.007320	-1.875408	null	1.pFind	1.pFind	0	-1	1	RpoC(1151)-RpoC(1132)
+	2	File1577 Spectrum6732 scans: 23522	RPKEPAILAEISGIVSFGK(2)-IPQESGGTKDITGGLPR(8):0	1.08e-008	3902.151434	3.009930	770.558129	null	1.pFind	1.pFind	0	-1	1	RpoC(1151)-RpoC(1132)
+	3	File1577 Spectrum6592 scans: 23283	RPKEPAILAEISGIVSFGK(2)-IPQESGGTKDITGGLPR(8):0	9.99e-008	3902.151434	3.009330	770.404644	null	1.pFind	1.pFind	0	-1	1	RpoC(1151)-RpoC(1132)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+30	RpoC(1251)-RpoC(1286)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1309 scans: 13696	INDKHIEVIVR(3)-VKIANR(1):0	1.07e-005	2200.305354	2.007660	911.197527	null	1.pFind	1.pFind	0	-1	1	RpoC(1251)-RpoC(1286)
+	2	File1577 Spectrum1297 scans: 13653	INDKHIEVIVR(3)-VKIANR(1):0	1.37e-004	2200.305354	2.005960	910.426667	null	1.pFind	1.pFind	0	-1	1	RpoC(1251)-RpoC(1286)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+31	RpoC(1263)-RpoC(1132)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3791 scans: 18708	KATIVNAGSSDFLEGEQVEYSR(0)-IPQESGGTKDITGGLPR(8):0	1.52e-010	4290.165324	1.995490	464.805933	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1132)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+32	RpoC(1263)-RpoC(1251)	0	0	1	0	4	4	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3563 scans: 18269	KATIVNAGSSDFLEGEQVEYSR(0)-INDKHIEVIVR(3):0	3.39e-011	3900.026654	0.994410	254.844382	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1251)
+	2	File1577 Spectrum3591 scans: 18326	KATIVNAGSSDFLEGEQVEYSR(0)-INDKHIEVIVR(3):0	4.04e-011	3900.026654	0.989640	253.622251	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1251)
+	3	File1577 Spectrum3519 scans: 18186	KATIVNAGSSDFLEGEQVEYSR(0)-INDKHIEVIVR(3):0	8.09e-010	3900.026654	0.998200	255.815423	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1251)
+	4	File1577 Spectrum3509 scans: 18167	KATIVNAGSSDFLEGEQVEYSR(0)-INDKHIEVIVR(3):0	4.15e-005	3900.026654	3.004310	769.539081	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1251)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+33	RpoC(213)-RpoC(216)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2471 scans: 16162	SMDLEQECEQLREELNETNSETKR(22)-KLTKR(0):0	6.42e-006	3777.851104	2.011210	531.943764	7,E(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(213)-RpoC(216)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+34	RpoC(1263)-RpoC(1340)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3221 scans: 17598	KATIVNAGSSDFLEGEQVEYSR(0)-VLTEAAVAGKR(9):0	9.04e-006	3678.910224	3.011110	817.585764	null	1.pFind	1.pFind	0	-1	1	RpoC(1263)-RpoC(1340)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+35	RpoC(1297)-RpoC(1072)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1311 scans: 13704	ELEANGKVGATYSR(6)-TAGGKDLRPALK(4):0	1.01e-005	2885.560834	2.010140	695.892521	null	1.pFind	1.pFind	0	-1	1	RpoC(1297)-RpoC(1072)
+	2	File1577 Spectrum1471 scans: 14177	ELEANGKVGATYSR(6)-TAGGKDLRPALK(4):0	4.03e-005	2885.560834	2.996830	1037.121526	null	1.pFind	1.pFind	0	-1	1	RpoC(1297)-RpoC(1072)
+	3	File1577 Spectrum1305 scans: 13683	ELEANGKVGATYSR(6)-TAGGKDLRPALK(4):0	2.30e-004	2885.560834	-0.001220	-0.422647	null	1.pFind	1.pFind	0	-1	1	RpoC(1297)-RpoC(1072)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+36	RpoC(1297)-RpoC(1286)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum921 scans: 12597	ELEANGKVGATYSR(6)-VKIANR(1):0	1.50e-005	2359.285744	-0.008690	-3.681760	null	1.pFind	1.pFind	0	-1	1	RpoC(1297)-RpoC(1286)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+37	RpoC(1297)-RpoC(1348)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2406 scans: 16045	ELEANGKVGATYSR(6)-GLKENVIVGR(2):0	3.78e-014	2743.486614	-0.002560	-0.932778	null	1.pFind	1.pFind	0	-1	1	RpoC(1297)-RpoC(1348)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+38	RpoC(13)-RpoC(40)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1651 scans: 14618	AQTKTEEFDAIK(3)-KPETINYR(0):0	4.64e-010	2565.332424	3.007830	1170.659074	null	1.pFind	1.pFind	0	-1	1	RpoC(13)-RpoC(40)
+	2	File1577 Spectrum1626 scans: 14562	AQTKTEEFDAIK(3)-KPETINYR(0):0	1.11e-007	2565.332424	0.003470	1.352118	null	1.pFind	1.pFind	0	-1	1	RpoC(13)-RpoC(40)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+39	RpoC(13)-RpoC(6)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4198 scans: 19408	AQTKTEEFDAIK(3)-MKDLLKFLK(5):0	9.50e-004	2680.475904	1.000460	372.960336	null	1.pFind	1.pFind	0	-1	1	RpoC(13)-RpoC(6)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+40	RpoC(1340)-RpoC(50)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1209 scans: 13404	VLTEAAVAGKR(9)-TFKPER(2):0	2.31e-006	2056.167854	0.000560	0.272218	null	1.pFind	1.pFind	0	-1	1	RpoC(1340)-RpoC(50)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+41	RpoC(1348)-RpoC(1286)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1455 scans: 14139	GLKENVIVGR(2)-VKIANR(1):0	1.45e-005	1949.178364	0.002730	1.399865	null	1.pFind	1.pFind	0	-1	1	RpoC(1348)-RpoC(1286)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+42	RpoC(87)-RpoC(40)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1410 scans: 13985	GVICEKCGVEVTQTK(5)-KPETINYR(0):0	4.30e-013	2892.472294	0.003960	1.368593	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(40)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+43	UvrD(448)-RpoB(914)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2433 scans: 16100	ELLQEKALAGR(5)-ASDVKDSSLR(4):0	1.30e-005	2469.343644	1.007610	407.715023	null	1.pFind	1.pFind	0	-1	1	UvrD(448)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+44	UvrD(242)-RpoC(781)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5496 scans: 21499	LLAGDTGKVMIVGDDDQSIYGWR(7)-KGLADTALK(0):0	7.72e-006	3589.869934	1.009880	281.155831	null	1.pFind	1.pFind	0	-1	1	UvrD(242)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+45	RpoC(996)-RpoC(983)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3978 scans: 19053	TKESYKVPYGAVLAK(5)-NTELKLIDEFGR(4):0	5.03e-006	3252.764344	1.007270	309.474171	null	1.pFind	1.pFind	0	-1	1	RpoC(996)-RpoC(983)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+46	RpoC(996)-RpoC(972)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2355 scans: 15940	TKESYKVPYGAVLAK(5)-SVVNSSGKLVITSR(7):0	7.60e-005	3264.833104	0.999660	306.002127	null	1.pFind	1.pFind	0	-1	1	RpoC(996)-RpoC(972)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+47	RpoC(996)-RpoC(1072)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1565 scans: 14385	TKESYKVPYGAVLAK(5)-TAGGKDLRPALK(4):0	7.67e-005	3044.727164	2.001640	656.762904	null	1.pFind	1.pFind	0	-1	1	RpoC(996)-RpoC(1072)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+48	RpoC(992)-RpoC(983)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3896 scans: 18901	TKESYKVPYGAVLAK(1)-NTELKLIDEFGR(4):0	2.49e-009	3252.764344	1.018220	312.837403	null	1.pFind	1.pFind	0	-1	1	RpoC(992)-RpoC(983)
+	2	File1577 Spectrum3904 scans: 18914	TKESYKVPYGAVLAK(1)-NTELKLIDEFGR(4):0	2.84e-005	3252.764344	2.004870	615.788586	null	1.pFind	1.pFind	0	-1	1	RpoC(992)-RpoC(983)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+49	RpoC(992)-RpoC(964)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1785 scans: 14899	TKESYKVPYGAVLAK(1)-LSNVKSVVNSSGK(4):0	4.21e-012	3136.738144	2.001120	637.350810	null	1.pFind	1.pFind	0	-1	1	RpoC(992)-RpoC(964)
+	2	File1577 Spectrum1842 scans: 14994	TKESYKVPYGAVLAK(1)-LSNVKSVVNSSGK(4):0	7.19e-012	3136.738144	3.011570	958.867563	null	1.pFind	1.pFind	0	-1	1	RpoC(992)-RpoC(964)
+	3	File1577 Spectrum1865 scans: 15029	TKESYKVPYGAVLAK(1)-LSNVKSVVNSSGK(4):0	2.03e-008	3136.738144	1.004720	320.101937	null	1.pFind	1.pFind	0	-1	1	RpoC(992)-RpoC(964)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+50	RpoC(983)-RpoC(964)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3737 scans: 18579	NTELKLIDEFGR(4)-LSNVKSVVNSSGK(4):0	2.26e-009	2917.575834	2.013220	689.318130	null	1.pFind	1.pFind	0	-1	1	RpoC(983)-RpoC(964)
+	2	File1577 Spectrum3669 scans: 18452	NTELKLIDEFGR(4)-LSNVKSVVNSSGK(4):0	2.56e-004	2917.575834	0.999780	342.439327	null	1.pFind	1.pFind	0	-1	1	RpoC(983)-RpoC(964)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+51	RpoC(972)-RpoC(959)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1812 scans: 14942	SVVNSSGKLVITSR(7)-GSIKLSNVK(3):0	3.83e-004	2556.484844	0.001690	0.660803	null	1.pFind	1.pFind	0	-1	1	RpoC(972)-RpoC(959)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+52	RpoC(972)-RpoC(781)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2418 scans: 16074	SVVNSSGKLVITSR(7)-KGLADTALK(0):0	1.66e-007	2527.458284	0.999650	395.202115	null	1.pFind	1.pFind	0	-1	1	RpoC(972)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+53	RpoC(972)-RpoB(914)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1956 scans: 15216	SVVNSSGKLVITSR(7)-ASDVKDSSLR(4):0	3.61e-006	2688.465564	1.004330	373.290661	null	1.pFind	1.pFind	0	-1	1	RpoC(972)-RpoB(914)
+	2	File1577 Spectrum1927 scans: 15166	SVVNSSGKLVITSR(7)-ASDVKDSSLR(4):0	3.06e-004	2688.465564	-0.004190	-1.557929	null	1.pFind	1.pFind	0	-1	1	RpoC(972)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+54	RpoC(911)-RpoC(972)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum6445 scans: 23023	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-SVVNSSGKLVITSR(7):0	3.58e-006	4472.442234	3.016980	673.964612	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(972)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+55	RpoC(911)-RpoC(557)	0	0	1	0	8	8	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5712 scans: 21858	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	9.36e-010	4705.463404	1.980060	420.533230	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+	2	File1577 Spectrum5789 scans: 21985	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	3.08e-009	4705.463404	2.994760	635.902320	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+	3	File1577 Spectrum5792 scans: 21988	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	2.63e-007	4705.463404	4.001260	849.439303	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+	4	File1577 Spectrum5882 scans: 22135	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	1.07e-006	4705.463404	1.970310	418.463352	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+	5	File1577 Spectrum5970 scans: 22265	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	1.36e-005	4705.463404	2.989910	634.873133	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+	6	File1577 Spectrum6103 scans: 22489	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	2.21e-005	4705.463404	1.996560	424.036082	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+	7	File1577 Spectrum6176 scans: 22598	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	5.56e-005	4705.463404	4.005810	850.404414	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+	8	File1577 Spectrum5633 scans: 21718	GHIINKGEAIGVIAAQSIGEPGTQLTMR(5)-ITEYEKDANGELVAK(5):0	1.60e-004	4705.463404	3.006660	638.427533	null	1.pFind	1.pFind	0	-1	1	RpoC(911)-RpoC(557)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+56	RpoC(9)-RpoC(1)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1852 scans: 15010	FLKAQTK(2)-MKDLLK(0):0	1.88e-004	1747.031564	0.001450	0.829500	null	1.pFind	1.pFind	0	-1	1	RpoC(9)-RpoC(1)
+	2	File1577 Spectrum1918 scans: 15139	FLKAQTK(2)-MKDLLK(0):0	4.08e-004	1747.031564	0.002570	1.470217	null	1.pFind	1.pFind	0	-1	1	RpoC(9)-RpoC(1)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+57	RpoC(87)-RpoC(66)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3266 scans: 17678	GVICEKCGVEVTQTK(5)-IFGPVKDYECLCGK(5):0	2.29e-006	3557.727574	1.000640	281.099538	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);24,V(Carbamidomethyl_C);26,D(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoC(66)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+58	RpoC(66)-RpoC(50)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4084 scans: 19228	IFGPVKDYECLCGK(5)-TFKPERDGLFCAR(2):0	7.85e-005	3446.682274	0.030940	8.974045	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);24,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoC(50)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+59	RpoC(87)-RpoB(914)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1511 scans: 14285	GVICEKCGVEVTQTK(5)-ASDVKDSSLR(4):0	9.69e-006	2949.478494	0.012160	4.121338	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+60	RpoC(87)-RpoB(900)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2866 scans: 16917	GVICEKCGVEVTQTK(5)-GETQLTPEEKLLR(9):0	3.84e-004	3385.747054	2.006080	591.980476	3,I(Carbamidomethyl_C);6,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(87)-RpoB(900)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+61	RpoC(850)-RpoC(992)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4099 scans: 19250	VTAEDVLKPGTADILVPR(7)-TKESYKVPYGAVLAK(1):0	5.73e-012	3712.070004	1.002760	269.988796	null	1.pFind	1.pFind	0	-1	1	RpoC(850)-RpoC(992)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+62	RpoC(850)-RpoC(959)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3108 scans: 17384	VTAEDVLKPGTADILVPR(7)-NKGSIKLSNVK(5):0	1.15e-006	3245.859634	3.000900	923.391404	null	1.pFind	1.pFind	0	-1	1	RpoC(850)-RpoC(959)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+63	RpoC(789)-RpoC(1132)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2828 scans: 16852	KGLADTALKTANSGYLTR(8)-IPQESGGTKDITGGLPR(8):0	1.87e-012	3770.021174	1.001690	265.557263	null	1.pFind	1.pFind	0	-1	1	RpoC(789)-RpoC(1132)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+64	RpoC(781)-RpoB(163)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum383 scans: 9864	KGLADTALK(0)-GKTHSSGK(1):0	3.84e-007	1882.052164	-0.002790	-1.481634	null	1.pFind	1.pFind	0	-1	1	RpoC(781)-RpoB(163)
+	2	File1577 Spectrum379 scans: 9841	KGLADTALK(0)-GKTHSSGK(1):0	1.90e-006	1882.052164	-0.000830	-0.440772	null	1.pFind	1.pFind	0	-1	1	RpoC(781)-RpoB(163)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+65	RpoC(749)-RpoC(850)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum6733 scans: 23523	GLMAKPDGSIIETPITANFR(4)-VTAEDVLKPGTADILVPR(7):0	1.92e-004	4189.270564	2.009410	479.311145	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoC(850)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+66	RpoC(749)-RpoC(789)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5813 scans: 22018	GLMAKPDGSIIETPITANFR(4)-GLADTALKTANSGYLTR(7):0	3.43e-005	4047.134824	3.003790	741.466756	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoC(789)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+67	RpoC(749)-RpoC(781)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4958 scans: 20685	GLMAKPDGSIIETPITANFR(4)-KGLADTALK(0):0	2.91e-007	3211.752394	0.002900	0.902650	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoC(781)
+	2	File1577 Spectrum5041 scans: 20817	GLMAKPDGSIIETPITANFR(4)-KGLADTALK(0):0	2.28e-004	3211.752394	0.009020	2.807547	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+68	RpoC(749)-RpoC(521)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5538 scans: 21570	GLMAKPDGSIIETPITANFR(4)-DCVNAKGEGMVLTGPK(5):0	1.30e-010	3971.020374	3.017640	759.146067	21,((Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoC(521)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+69	RpoC(749)-RpoC(1132)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5063 scans: 20848	GLMAKPDGSIIETPITANFR(4)-IPQESGGTKDITGGLPR(8):0	4.22e-007	4021.119164	2.015530	500.859566	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoC(1132)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+70	RpoC(749)-RpoB(639)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5026 scans: 20790	GLMAKPDGSIIETPITANFR(4)-SKGESSLFSR(1):0	9.36e-007	3392.764764	4.019370	1182.936065	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoB(639)
+	2	File1577 Spectrum5088 scans: 20882	GLMAKPDGSIIETPITANFR(4)-SKGESSLFSR(1):0	1.80e-006	3392.764764	1.007410	296.752710	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoB(639)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+71	RpoC(749)-RpoB(163)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2721 scans: 16634	GLMAKPDGSIIETPITANFR(4)-GKTHSSGK(1):0	2.34e-006	3096.627544	1.006370	324.777842	null	1.pFind	1.pFind	0	-1	1	RpoC(749)-RpoB(163)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+72	RpoC(681)-RpoC(781)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4894 scans: 20601	YNKVIDIWAAANDR(2)-KGLADTALK(0):0	5.97e-007	2729.474984	2.008110	734.901035	null	1.pFind	1.pFind	0	-1	1	RpoC(681)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+73	RpoC(66)-RpoC(96)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2846 scans: 16890	IFGPVKDYECLCGK(5)-CGVEVTQTKVR(8):0	8.89e-005	3126.554964	2.000410	639.197940	9,E(Carbamidomethyl_C);11,L(Carbamidomethyl_C);14,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoC(66)-RpoC(96)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+74	RpoB(169)-RpoB(161)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1801 scans: 14926	THSSGKVLYNAR(5)-SPGVFFDSDKGK(9):0	2.89e-007	2780.413124	-0.001790	-0.643556	null	1.pFind	1.pFind	0	-1	1	RpoB(169)-RpoB(161)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+75	RpoB(1262)-RpoB(900)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3782 scans: 18690	STGSYSLVTQQPLGGKAQFGGQR(15)-GETQLTPEEKLLR(9):0	2.73e-004	4045.111794	2.007540	495.918284	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(900)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+76	RpoB(1262)-RpoB(914)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2659 scans: 16520	STGSYSLVTQQPLGGKAQFGGQR(15)-ASDVKDSSLR(4):0	2.52e-006	3608.843234	2.002660	554.468830	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(914)
+	2	File1577 Spectrum2662 scans: 16525	STGSYSLVTQQPLGGKAQFGGQR(15)-ASDVKDSSLR(4):0	1.75e-005	3608.843234	4.018020	1111.833473	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+77	RpoB(1262)-RpoC(371)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5696 scans: 21830	STGSYSLVTQQPLGGKAQFGGQR(15)-KMALELFKPFIYGK(0):0	8.96e-004	4216.239234	0.997630	236.503618	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoC(371)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+78	RpoB(1328)-RpoC(13)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5305 scans: 21209	NIVDGNHQMEPGMPESFNVLLKEIR(21)-AQTKTEEFDAIK(3):0	8.10e-009	4412.202984	3.008730	681.290943	null	1.pFind	1.pFind	0	-1	1	RpoB(1328)-RpoC(13)
+	2	File1577 Spectrum5387 scans: 21332	NIVDGNHQMEPGMPESFNVLLKEIR(21)-AQTKTEEFDAIK(3):0	3.23e-008	4412.202984	0.019830	4.493308	null	1.pFind	1.pFind	0	-1	1	RpoB(1328)-RpoC(13)
+	3	File1577 Spectrum5470 scans: 21456	NIVDGNHQMEPGMPESFNVLLKEIR(21)-AQTKTEEFDAIK(3):0	1.30e-007	4412.202984	3.006930	680.883632	null	1.pFind	1.pFind	0	-1	1	RpoB(1328)-RpoC(13)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+79	RpoB(1328)-RpoC(96)	0	0	1	0	2	0	2	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4753 scans: 20408	NIVDGNHQMEPGMPESFNVLLKEIR(21)-CGVEVTQTKVR(8):0	9.80e-006	4308.170244	1.002070	232.489152	25,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(1328)-RpoC(96)
+	2	File1577 Spectrum4741 scans: 20389	NIVDGNHQMEPGMPESFNVLLKEIR(21)-CGVEVTQTKVR(8):0	1.44e-004	4308.170244	2.022270	469.073599	25,R(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(1328)-RpoC(96)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+80	RpoB(161)-RpoC(1132)	0	0	1	0	5	5	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1682 scans: 14683	SPGVFFDSDKGKTHSSGK(9)-IPQESGGTKDITGGLPR(8):0	3.52e-011	3770.911284	-0.012320	-3.266253	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(1132)
+	2	File1577 Spectrum1667 scans: 14655	SPGVFFDSDKGKTHSSGK(9)-IPQESGGTKDITGGLPR(8):0	7.85e-011	3770.911284	0.990480	262.524219	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(1132)
+	3	File1577 Spectrum1736 scans: 14809	SPGVFFDSDKGKTHSSGK(9)-IPQESGGTKDITGGLPR(8):0	3.49e-010	3770.911284	1.001780	265.518460	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(1132)
+	4	File1577 Spectrum1694 scans: 14726	SPGVFFDSDKGKTHSSGK(9)-IPQESGGTKDITGGLPR(8):0	8.53e-008	3770.911284	0.990240	262.460625	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(1132)
+	5	File1577 Spectrum1679 scans: 14679	SPGVFFDSDKGKTHSSGK(9)-IPQESGGTKDITGGLPR(8):0	8.95e-006	3770.911284	1.999140	529.725383	null	1.pFind	1.pFind	0	-1	1	RpoB(161)-RpoC(1132)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+81	RpoB(163)-RpoC(781)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1426 scans: 14061	SPGVFFDSDKGKTHSSGK(11)-KGLADTALK(0):0	2.02e-009	2961.544514	-0.009530	-3.216832	null	1.pFind	1.pFind	0	-1	1	RpoB(163)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+82	RpoB(163)-RpoC(789)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2667 scans: 16532	SPGVFFDSDKGKTHSSGK(11)-GLADTALKTANSGYLTR(7):0	9.03e-008	3796.926944	4.005320	1053.493870	null	1.pFind	1.pFind	0	-1	1	RpoB(163)-RpoC(789)
+	2	File1577 Spectrum2661 scans: 16524	SPGVFFDSDKGKTHSSGK(11)-GLADTALKTANSGYLTR(7):0	8.56e-006	3796.926944	2.006440	528.018772	null	1.pFind	1.pFind	0	-1	1	RpoB(163)-RpoC(789)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+83	RpoB(1262)-RpoB(890)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2561 scans: 16325	STGSYSLVTQQPLGGKAQFGGQR(15)-VTPKGETQLTPEEK(3):0	4.88e-007	4088.106374	1.004640	245.626148	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(890)
+	2	File1577 Spectrum2554 scans: 16314	STGSYSLVTQQPLGGKAQFGGQR(15)-VTPKGETQLTPEEK(3):0	1.04e-005	4088.106374	4.013440	980.531489	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(890)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+84	RpoB(169)-RpoB(203)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2066 scans: 15384	THSSGKVLYNAR(5)-KLPATIILR(0):0	2.15e-012	2521.474214	-0.003200	-1.268594	null	1.pFind	1.pFind	0	-1	1	RpoB(169)-RpoB(203)
+	2	File1577 Spectrum2081 scans: 15411	THSSGKVLYNAR(5)-KLPATIILR(0):0	1.79e-009	2521.474214	-0.003200	-1.268594	null	1.pFind	1.pFind	0	-1	1	RpoB(169)-RpoB(203)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+85	RpoB(236)-RpoB(203)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4823 scans: 20495	DNKLQMELVPER(2)-KLPATIILR(0):0	2.67e-008	2660.529674	0.002740	1.029479	null	1.pFind	1.pFind	0	-1	1	RpoB(236)-RpoB(203)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+86	RpoB(236)-RpoB(331)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1418 scans: 14020	DNKLQMELVPER(2)-LSQSGHKR(6):0	5.77e-005	2548.342954	3.010610	1179.539332	null	1.pFind	1.pFind	0	-1	1	RpoB(236)-RpoB(331)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+87	RpoB(283)-RpoB(236)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum6185 scans: 22613	QLEKDDVKLIEVPVEYIAGK(7)-DNKLQMELVPER(2):0	5.68e-012	3922.101054	1.001610	255.245142	null	1.pFind	1.pFind	0	-1	1	RpoB(283)-RpoB(236)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+88	RpoB(431)-RpoB(404)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2152 scans: 15569	KLIDIR(0)-MKFNR(1):0	6.01e-005	1616.943424	0.002430	1.501898	null	1.pFind	1.pFind	0	-1	1	RpoB(431)-RpoB(404)
+	2	File1577 Spectrum2229 scans: 15696	KLIDIR(0)-MKFNR(1):0	2.30e-004	1616.943424	-0.000130	-0.080349	null	1.pFind	1.pFind	0	-1	1	RpoB(431)-RpoB(404)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+89	RpoB(496)-RpoB(161)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5571 scans: 21627	LSLGDLDTLMPQDMINAKPISAAVK(17)-SPGVFFDSDKGKTHSSGK(9):0	3.88e-004	4686.392224	0.998740	213.023713	null	1.pFind	1.pFind	0	-1	1	RpoB(496)-RpoB(161)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+90	RpoB(639)-RpoB(431)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2858 scans: 16907	SKGESSLFSR(1)-KLIDIR(0):0	2.46e-008	2019.136234	1.001900	495.709015	null	1.pFind	1.pFind	0	-1	1	RpoB(639)-RpoB(431)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+91	RpoB(1158)-RpoB(1178)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4887 scans: 20591	QKVDLSTFSDEEVMR(1)-KGMPIATPVFDGAK(0):0	2.68e-016	3379.704134	2.009440	594.030690	null	1.pFind	1.pFind	0	-1	1	RpoB(1158)-RpoB(1178)
+	2	File1577 Spectrum4891 scans: 20596	QKVDLSTFSDEEVMR(1)-KGMPIATPVFDGAK(0):0	4.39e-016	3379.704134	4.004320	1183.059471	null	1.pFind	1.pFind	0	-1	1	RpoB(1158)-RpoB(1178)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+92	RpoA(25)-RpoB(1133)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3293 scans: 17747	LVDIEQVSSTHAKVTLEPLER(12)-INAMLKQQQEVAK(5):0	5.52e-006	4029.181784	1.001230	248.370811	null	1.pFind	1.pFind	0	-1	1	RpoA(25)-RpoB(1133)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+93	RpoA(298)-RpoA(291)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4295 scans: 19566	KSLTEIKDVLASR(0)-TEVELLKTPNLGK(6):0	4.83e-006	3065.758534	0.005080	1.656465	null	1.pFind	1.pFind	0	-1	1	RpoA(298)-RpoA(291)
+	2	File1577 Spectrum4339 scans: 19639	KSLTEIKDVLASR(0)-TEVELLKTPNLGK(6):0	1.83e-005	3065.758534	0.004530	1.477124	null	1.pFind	1.pFind	0	-1	1	RpoA(298)-RpoA(291)
+	3	File1577 Spectrum4269 scans: 19510	KSLTEIKDVLASR(0)-TEVELLKTPNLGK(6):0	1.97e-005	3065.758534	0.998580	325.507397	null	1.pFind	1.pFind	0	-1	1	RpoA(298)-RpoA(291)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+94	RpoA(298)-RpoB(914)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2907 scans: 16977	KSLTEIKDVLASR(0)-ASDVKDSSLR(4):0	9.09e-004	2701.485954	-0.013840	-5.121223	null	1.pFind	1.pFind	0	-1	1	RpoA(298)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+95	RpoA(95)-RpoA(1)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4994 scans: 20734	VQGKDEVILTLNK(3)-MQGSVTEFLKPR(0):0	6.95e-005	3013.651974	0.001040	0.344981	null	1.pFind	1.pFind	0	-1	1	RpoA(95)-RpoA(1)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+96	RpoB(1035)-RpoB(1051)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3437 scans: 18029	KITQGDDLAPGVLK(0)-IVKVYLAVK(2):0	1.19e-005	2651.587484	0.002290	0.863305	null	1.pFind	1.pFind	0	-1	1	RpoB(1035)-RpoB(1051)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+97	RpoB(1051)-RpoB(1073)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1480 scans: 14200	IVKVYLAVK(2)-HGNKGVISK(3):0	1.81e-004	2136.303224	-0.004450	-2.082060	null	1.pFind	1.pFind	0	-1	1	RpoB(1051)-RpoB(1073)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+98	RpoB(1065)-RpoB(1057)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1702 scans: 14744	IQPGDKMAGR(5)-VYLAVKR(5):0	8.12e-004	2085.176654	0.001040	0.498518	null	1.pFind	1.pFind	0	-1	1	RpoB(1065)-RpoB(1057)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+99	RpoB(1065)-RpoC(781)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1705 scans: 14752	IQPGDKMAGR(5)-KGLADTALK(0):0	6.93e-004	2153.187604	-0.000150	-0.069632	null	1.pFind	1.pFind	0	-1	1	RpoB(1065)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+100	RpoB(697)-RpoB(639)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2496 scans: 16218	ADKPLVGTGMER(2)-SKGESSLFSR(1):0	1.79e-010	2535.300074	2.001860	788.658841	null	1.pFind	1.pFind	0	-1	1	RpoB(697)-RpoB(639)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+101	RpoB(1191)-RpoB(1158)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5407 scans: 21358	GMPIATPVFDGAKEAEIK(12)-QKVDLSTFSDEEVMR(1):0	3.82e-006	3821.910484	0.990330	258.983735	null	1.pFind	1.pFind	0	-1	1	RpoB(1191)-RpoB(1158)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+102	RpoB(1200)-RpoB(1127)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum7044 scans: 23993	ELLKLGDLPTSGQIR(3)-GIGDKINAMLK(4):0	5.08e-005	2963.672694	0.007160	2.415095	null	1.pFind	1.pFind	0	-1	1	RpoB(1200)-RpoB(1127)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+103	RpoB(1242)-RpoB(1065)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1447 scans: 14120	LNHLVDDKMHAR(7)-IQPGDKMAGR(5):0	8.01e-004	2685.384094	0.007670	2.855123	null	1.pFind	1.pFind	0	-1	1	RpoB(1242)-RpoB(1065)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+104	RpoB(1242)-RpoC(781)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1800 scans: 14925	LNHLVDDKMHAR(7)-KGLADTALK(0):0	1.32e-004	2529.373504	0.997510	394.058053	null	1.pFind	1.pFind	0	-1	1	RpoB(1242)-RpoC(781)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+105	RpoB(1262)-RpoB(1051)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3745 scans: 18598	STGSYSLVTQQPLGGKAQFGGQR(15)-IVKVYLAVK(2):0	2.64e-007	3563.971324	0.001390	0.389904	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1051)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+106	RpoB(1262)-RpoB(1065)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2756 scans: 16685	STGSYSLVTQQPLGGKAQFGGQR(15)-IQPGDKMAGR(5):0	8.64e-004	3603.846544	0.004230	1.173417	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1065)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+107	RpoB(1262)-RpoB(1242)	0	0	1	0	6	6	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2645 scans: 16500	STGSYSLVTQQPLGGKAQFGGQR(15)-LNHLVDDKMHAR(7):0	8.69e-008	3980.032444	1.999970	502.121534	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1242)
+	2	File1577 Spectrum2692 scans: 16586	STGSYSLVTQQPLGGKAQFGGQR(15)-LNHLVDDKMHAR(7):0	4.33e-007	3980.032444	2.013020	505.396270	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1242)
+	3	File1577 Spectrum2627 scans: 16462	STGSYSLVTQQPLGGKAQFGGQR(15)-LNHLVDDKMHAR(7):0	1.08e-006	3980.032444	-0.002260	-0.567691	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1242)
+	4	File1577 Spectrum2716 scans: 16627	STGSYSLVTQQPLGGKAQFGGQR(15)-LNHLVDDKMHAR(7):0	2.34e-006	3980.032444	3.002770	753.699291	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1242)
+	5	File1577 Spectrum2586 scans: 16368	STGSYSLVTQQPLGGKAQFGGQR(15)-LNHLVDDKMHAR(7):0	4.19e-006	3980.032444	3.014240	756.576098	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1242)
+	6	File1577 Spectrum2587 scans: 16372	STGSYSLVTQQPLGGKAQFGGQR(15)-LNHLVDDKMHAR(7):0	6.27e-006	3980.032444	3.010580	755.658130	null	1.pFind	1.pFind	0	-1	1	RpoB(1262)-RpoB(1242)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+108	RpoB(909)-RpoB(941)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1124 scans: 13195	AIFGEKASDVK(5)-DGVEKDKR(4):0	2.28e-004	2275.205744	0.993370	436.223086	null	1.pFind	1.pFind	0	-1	1	RpoB(909)-RpoB(941)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+109	RpoB(890)-RpoB(914)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1176 scans: 13321	VTPKGETQLTPEEK(3)-ASDVKDSSLR(4):0	4.21e-007	2798.454714	0.995180	355.363407	null	1.pFind	1.pFind	0	-1	1	RpoB(890)-RpoB(914)
+	2	File1577 Spectrum1229 scans: 13446	VTPKGETQLTPEEK(3)-ASDVKDSSLR(4):0	6.72e-006	2798.454714	-0.009940	-3.550695	null	1.pFind	1.pFind	0	-1	1	RpoB(890)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+110	RpoB(890)-RpoC(96)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1145 scans: 13251	VTPKGETQLTPEEK(3)-CGVEVTQTKVR(8):0	4.73e-005	2997.569024	2.000510	666.708479	14,K(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(890)-RpoC(96)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+111	RpoB(900)-RpoB(914)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2643 scans: 16496	GETQLTPEEKLLR(9)-ASDVKDSSLR(4):0	2.70e-008	2755.460134	2.009280	728.402022	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoB(914)
+	2	File1577 Spectrum2640 scans: 16491	GETQLTPEEKLLR(9)-ASDVKDSSLR(4):0	6.97e-006	2755.460134	0.994400	360.621495	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoB(914)
+	3	File1577 Spectrum2722 scans: 16635	GETQLTPEEKLLR(9)-ASDVKDSSLR(4):0	7.92e-005	2755.460134	1.014160	367.784870	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+112	RpoB(900)-RpoB(941)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1766 scans: 14868	GETQLTPEEKLLR(9)-DGVEKDKR(4):0	2.05e-006	2624.401884	2.006730	763.765648	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoB(941)
+	2	File1577 Spectrum1763 scans: 14865	GETQLTPEEKLLR(9)-DGVEKDKR(4):0	3.59e-004	2624.401884	1.002130	381.558671	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoB(941)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+113	RpoB(900)-RpoC(1297)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2898 scans: 16963	GETQLTPEEKLLR(9)-ELEANGKVGATYSR(6):0	3.41e-004	3172.661344	0.999470	314.826612	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoC(1297)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+114	RpoB(900)-RpoC(13)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum3236 scans: 17619	GETQLTPEEKLLR(9)-AQTKTEEFDAIK(3):0	4.69e-005	3058.607184	-0.004690	-1.532875	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoC(13)
+	2	File1577 Spectrum3235 scans: 17618	GETQLTPEEKLLR(9)-AQTKTEEFDAIK(3):0	1.82e-004	3058.607184	2.004830	654.826682	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoC(13)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+115	RpoB(900)-RpoC(50)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2467 scans: 16155	GETQLTPEEKLLR(9)-TFKPER(2):0	2.15e-007	2455.332024	0.000190	0.077351	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoC(50)
+	2	File1577 Spectrum2396 scans: 16028	GETQLTPEEKLLR(9)-TFKPER(2):0	8.42e-006	2455.332024	0.992630	403.946243	null	1.pFind	1.pFind	0	-1	1	RpoB(900)-RpoC(50)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+116	RpoB(909)-RpoB(890)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1878 scans: 15050	AIFGEKASDVKDSSLR(5)-VTPKGETQLTPEEK(3):0	2.72e-009	3443.803304	2.000760	580.466931	null	1.pFind	1.pFind	0	-1	1	RpoB(909)-RpoB(890)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+117	RpoB(890)-RpoB(909)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1841 scans: 14993	VTPKGETQLTPEEK(3)-AIFGEKASDVK(5):0	5.19e-004	2885.527134	-0.001560	-0.540441	null	1.pFind	1.pFind	0	-1	1	RpoB(890)-RpoB(909)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+118	RpoB(909)-RpoC(50)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1700 scans: 14741	AIFGEKASDVK(5)-TFKPER(2):0	1.50e-004	2106.135884	-0.001190	-0.564746	null	1.pFind	1.pFind	0	-1	1	RpoB(909)-RpoC(50)
+	2	File1577 Spectrum1695 scans: 14729	AIFGEKASDVK(5)-TFKPER(2):0	1.61e-004	2106.135884	2.002730	949.545505	null	1.pFind	1.pFind	0	-1	1	RpoB(909)-RpoC(50)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+119	RpoB(914)-RpoB(890)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4147 scans: 19338	ASDVKDSSLRVPNGVSGTVIDVQVFTR(4)-VTPKGETQLTPEEK(3):0	2.35e-011	4567.401864	1.007500	220.487664	null	1.pFind	1.pFind	0	-1	1	RpoB(914)-RpoB(890)
+	2	File1577 Spectrum3858 scans: 18835	ASDVKDSSLRVPNGVSGTVIDVQVFTR(4)-VTPKGETQLTPEEK(3):0	1.38e-006	4567.401864	3.011900	658.854210	null	1.pFind	1.pFind	0	-1	1	RpoB(914)-RpoB(890)
+	3	File1577 Spectrum4143 scans: 19332	ASDVKDSSLRVPNGVSGTVIDVQVFTR(4)-VTPKGETQLTPEEK(3):0	3.37e-005	4567.401864	1.995790	436.676844	null	1.pFind	1.pFind	0	-1	1	RpoB(914)-RpoB(890)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+120	RpoB(914)-RpoB(900)	0	0	1	0	3	3	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5363 scans: 21297	ASDVKDSSLRVPNGVSGTVIDVQVFTR(4)-GETQLTPEEKLLR(9):0	7.31e-005	4524.407284	1.972980	435.787743	null	1.pFind	1.pFind	0	-1	1	RpoB(914)-RpoB(900)
+	2	File1577 Spectrum5357 scans: 21288	ASDVKDSSLRVPNGVSGTVIDVQVFTR(4)-GETQLTPEEKLLR(9):0	2.24e-004	4524.407284	3.988630	880.608290	null	1.pFind	1.pFind	0	-1	1	RpoB(914)-RpoB(900)
+	3	File1577 Spectrum5010 scans: 20758	ASDVKDSSLRVPNGVSGTVIDVQVFTR(4)-GETQLTPEEKLLR(9):0	4.56e-004	4524.407284	2.006830	443.261147	null	1.pFind	1.pFind	0	-1	1	RpoB(914)-RpoB(900)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+121	RpoB(954)-RpoB(914)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2820 scans: 16838	ALEIEEMQLKQAK(9)-ASDVKDSSLR(4):0	1.98e-004	2772.457694	0.000480	0.173069	null	1.pFind	1.pFind	0	-1	1	RpoB(954)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+122	RpoB(954)-RpoB(941)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2005 scans: 15288	ALEIEEMQLKQAK(9)-DGVEKDKR(4):0	4.26e-004	2641.399444	-0.003330	-1.260216	null	1.pFind	1.pFind	0	-1	1	RpoB(954)-RpoB(941)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+123	RpoA(1)-RpoC(370)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2285 scans: 15801	MQGSVTEFLKPR(0)-LHQCGLPKK(7):0	2.50e-008	2637.413264	1.001300	379.363384	15,)(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoA(1)-RpoC(370)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+124	RpoC(1132)-RpoB(163)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum675 scans: 11584	IPQESGGTKDITGGLPR(8)-GKTHSSGK(1):0	3.93e-004	2691.418934	1.013580	376.314334	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoB(163)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+125	RpoC(1132)-RpoC(1072)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1767 scans: 14872	IPQESGGTKDITGGLPR(8)-TAGGKDLRPALK(4):0	2.17e-006	3116.719114	1.004940	322.227179	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(1072)
+	2	File1577 Spectrum1746 scans: 14828	IPQESGGTKDITGGLPR(8)-TAGGKDLRPALK(4):0	1.24e-004	3116.719114	0.997200	319.746195	null	1.pFind	1.pFind	0	-1	1	RpoC(1132)-RpoC(1072)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+126	RpoB(890)-RpoB(890)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1233 scans: 13456	VTPKGETQLTPEEK(3)-VTPKGETQLTPEEK(3):0	3.17e-008	3277.717854	-0.004280	-1.305387	null	1.pFind	1.pFind	0	-1	1	RpoB(890)-RpoB(890)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+127	RpoB(844)-RpoC(87)	0	0	1	0	1	0	1	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4913 scans: 20628	DTKLGPEEITADIPNVGEAALSK(2)-GVICEKCGVEVTQTK(5):0	1.43e-009	4240.149184	3.006750	708.443538	26,)(Carbamidomethyl_C);29,V(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoC(87)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+128	RpoB(844)-RpoC(66)	0	0	1	0	4	0	4	1	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum6260 scans: 22732	DTKLGPEEITADIPNVGEAALSK(2)-IFGPVKDYECLCGK(5):0	8.74e-010	4218.111334	0.991680	234.989119	32,V(Carbamidomethyl_C);34,D(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoC(66)
+	2	File1577 Spectrum6251 scans: 22719	DTKLGPEEITADIPNVGEAALSK(2)-IFGPVKDYECLCGK(5):0	1.73e-009	4218.111334	1.010440	239.433436	32,V(Carbamidomethyl_C);34,D(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoC(66)
+	3	File1577 Spectrum6246 scans: 22710	DTKLGPEEITADIPNVGEAALSK(2)-IFGPVKDYECLCGK(5):0	1.54e-006	4218.111334	4.013360	950.327868	32,V(Carbamidomethyl_C);34,D(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoC(66)
+	4	File1577 Spectrum6334 scans: 22842	DTKLGPEEITADIPNVGEAALSK(2)-IFGPVKDYECLCGK(5):0	2.65e-004	4218.111334	0.982600	232.838018	32,V(Carbamidomethyl_C);34,D(Carbamidomethyl_C);	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoC(66)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+129	RpoB(844)-RpoC(40)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4563 scans: 20121	DTKLGPEEITADIPNVGEAALSK(2)-KPETINYR(0):0	4.94e-008	3552.856064	-0.001610	-0.453028	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoC(40)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+130	RpoB(844)-RpoB(914)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5145 scans: 20961	DTKLGPEEITADIPNVGEAALSK(2)-ASDVKDSSLR(4):0	2.39e-005	3609.862264	0.999990	276.862160	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(914)
+	2	File1577 Spectrum5054 scans: 20838	DTKLGPEEITADIPNVGEAALSK(2)-ASDVKDSSLR(4):0	6.55e-005	3609.862264	2.008270	555.864357	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(914)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+131	RpoB(844)-RpoB(900)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5989 scans: 22294	DTKLGPEEITADIPNVGEAALSK(2)-GETQLTPEEKLLR(9):0	5.25e-005	4046.130824	1.996310	493.021421	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(900)
+	2	File1577 Spectrum6047 scans: 22382	DTKLGPEEITADIPNVGEAALSK(2)-GETQLTPEEKLLR(9):0	1.60e-004	4046.130824	4.006740	989.038940	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(900)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+132	RpoB(844)-RpoB(890)	0	0	1	0	2	2	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum4637 scans: 20232	DTKLGPEEITADIPNVGEAALSK(2)-VTPKGETQLTPEEK(3):0	1.98e-008	4089.125404	0.012250	2.995004	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(890)
+	2	File1577 Spectrum4633 scans: 20223	DTKLGPEEITADIPNVGEAALSK(2)-VTPKGETQLTPEEK(3):0	2.07e-006	4089.125404	2.993930	731.453064	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(890)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+133	RpoB(844)-RpoB(844)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum7704 scans: 25104	DTKLGPEEITADIPNVGEAALSK(2)-DTKLGPEEITADIPNVGEAALSK(2):0	4.60e-004	4900.532954	3.012810	614.288392	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(844)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+134	RpoB(844)-RpoB(639)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5402 scans: 21352	DTKLGPEEITADIPNVGEAALSK(2)-SKGESSLFSR(1):0	9.05e-008	3629.867354	-0.019020	-5.238435	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(639)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+135	RpoB(844)-RpoB(1262)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum5557 scans: 21603	DTKLGPEEITADIPNVGEAALSK(2)-STGSYSLVTQQPLGGKAQFGGQR(15):0	1.07e-004	4899.513924	2.005790	409.133903	null	1.pFind	1.pFind	0	-1	1	RpoB(844)-RpoB(1262)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+136	RpoB(8)-RpoB(99)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum587 scans: 11118	VYSYTEKK(6)-VKLR(1):0	6.56e-004	1696.976164	-0.005510	-3.245036	null	1.pFind	1.pFind	0	-1	1	RpoB(8)-RpoB(99)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+137	RpoB(8)-RpoB(13)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1131 scans: 13211	MVYSYTEKK(7)-KDFGK(0):0	2.55e-004	1906.974844	1.005810	526.881278	null	1.pFind	1.pFind	0	-1	1	RpoB(8)-RpoB(13)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+138	RpoB(719)-RpoB(639)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum2096 scans: 15434	AVAVDSGVTAVAKR(12)-SKGESSLFSR(1):0	1.69e-004	2605.407304	0.999390	383.287814	null	1.pFind	1.pFind	0	-1	1	RpoB(719)-RpoB(639)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+139	RpoB(719)-RpoB(1032)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum815 scans: 12247	AVAVDSGVTAVAKR(12)-KLEAKR(4):0	8.31e-004	2252.321384	-0.003470	-1.539946	null	1.pFind	1.pFind	0	-1	1	RpoB(719)-RpoB(1032)
+Order	ProteinAC	MW	pI	UniquePepNum	Coverage(%)	SpecNum	Non-ModifiedSpecNum	ModifiedSpecNum	UniqueModifiedPepNum	Description
+140	RpoB(719)-RpoB(1028)	0	0	1	0	1	1	0	0	null
+	Order	Spectrum	Sequence	Score	Calc_M	Delta_M	ppm	Modification	Sample	Engine	MatchedIons	MissCleaveNum	Rank	Proteins
+	1	File1577 Spectrum1078 scans: 13077	AVAVDSGVTAVAKR(12)-KLEAK(0):0	2.33e-005	2096.220274	-0.004740	-2.260132	null	1.pFind	1.pFind	0	-1	1	RpoB(719)-RpoB(1028)
+
+
