@@ -7,8 +7,8 @@ clear
 
 # Setup build environment
 #
-sudo apt-get install -y byobu htop vim fonts-inconsolata openssh-server \
-    libcurl-openssl-dev python-dev build-essential cmake linux-headers-generic git 
+sudo apt-get install -y byobu htop vim fonts-inconsolata openssh-server gtk2-engines-murrine \
+    libcurl4-openssl-dev python-dev build-essential cmake linux-headers-generic git 
 
 
 # Install Google chrome and talkplugin
