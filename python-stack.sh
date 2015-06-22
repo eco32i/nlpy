@@ -12,8 +12,9 @@ PYDATA="$dir/conf/pydata.list"
 # samtools, bedtools, etc
 # Install dependencies for the python data stack
 # including for matplotlib: libpng, libjpeg, libfreetype
-sudo apt-get install libblas-dev liblapacke-dev gfortran python-pip \
-    samtools bedtools Trimmomatic libpng-dev libjpeg8-dev libfreetype6-dev
+sudo apt-get install libblas-dev liblapacke-dev gfortran g++ python-pip \
+    samtools bedtools Trimmomatic libpng-dev libjpeg8-dev libfreetype6-dev \
+    libatlas3-base libatlas-dev
 
 
 # Setup virtualenv and install dependencies there
