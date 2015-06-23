@@ -8,4 +8,4 @@ sudo add-apt-repository -y ppa:marutter/rrutter
 sudo add-apt-repository -y ppa:staticfloat/juliareleases
 sudo add-apt-repository -y ppa:staticfloat/julia-deps
 
-sudo apt-get update && sudo apt-get install julia r-base vienna-rna -y
+sudo apt-get update && sudo apt-get install Trimmomatic julia r-base vienna-rna -y
