@@ -39,7 +39,7 @@ for_window [window_role="pop-up"] floating enable
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Inconsolata 16
+font pango:Cantarell 14px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -170,7 +170,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
   status_command i3status
-  font pango: Inconsolata 16
+  font pango: Cantarell 14px
   colors {
     separator #dc322f
     background #002b36
