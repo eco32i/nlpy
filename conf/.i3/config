@@ -16,6 +16,7 @@ exec xmodma -e "keysym Caps_Lock = Escape"
 # exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/FootFall.png
 exec --no-startup-id nm-applet
 exec --no-startup-id gnome-settings-daemon
+exec --no-startup-id nitrogen --restore
 exec xautolock -time 5 -locker "/bin/lock" &
 # exec --no-startup-id feh --bg-fill /usr/share/backgrounds/xgu472hf2_by_lariliikala.jpg
 
