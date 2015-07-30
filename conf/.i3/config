@@ -10,8 +10,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-xmodmap -e "clear lock"
-xmodmap -e "keysym Caps_Lock = Escape"
+exec xmodmap -e "clear lock"
+exec xmodma -e "keysym Caps_Lock = Escape"
 
 # exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/FootFall.png
 exec --no-startup-id nm-applet
