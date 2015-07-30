@@ -14,7 +14,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
@@ -70,7 +70,6 @@ set wildmode=full             " <Tab> cycles between all matching choices.
 
 " don't bell or blink
 set noerrorbells
-set vb t_vb=
 
 " Ignore these files when completing
 set wildignore+=*.o,*.obj,.git,*.pyc
@@ -127,7 +126,7 @@ set smartcase               " unless uppercase letters are used in the regex.
 set hlsearch                " Highlight searches by default.
 set incsearch               " Incrementally search while typing a /regex
 
-let NERDTreeShowHidden=1
+" let NERDTreeShowHidden=1
 
 " Paste from clipboard
 map <leader>p "+p
