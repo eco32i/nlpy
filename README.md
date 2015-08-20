@@ -1,4 +1,6 @@
 nlpy
 ====
 
-A collection of silly utility scripts
+A collection of dotfiles and postinstall scripts.
+
+Very much WIP.
