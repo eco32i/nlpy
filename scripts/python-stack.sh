@@ -32,6 +32,7 @@ fi
 mkdir "$VIRTUALENV_DIR"
 sudo pip install virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper_lazy.sh
+source ~/.bashrc
 mkvirtualenv pydata
 
 # The following assumes .bashrc with virtualenv stuff is already in place

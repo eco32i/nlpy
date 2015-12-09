@@ -37,9 +37,5 @@ sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo add-apt-repository -y ppa:gnome3-team/gnome3
 sudo add-apt-repository -y ppa:gnome3-team/gnome3-staging
 
-# Add Yorba PPA (for shotwell and Geary)
-#
-sudo add-apt-repository -y ppa:yorba/ppa
-
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 

@@ -10,23 +10,13 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-exec xmodmap -e "clear lock"
-exec xmodmap -e "keysym Caps_Lock = Escape"
 
 # exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/FootFall.png
 exec compton --config ~/.config/compton.conf -b
 exec --no-startup-id nm-applet
 exec --no-startup-id gnome-settings-daemon
+exec xautolock -time 5 -locker "/bin/lock.sh" &
 exec --no-startup-id nitrogen --restore
-exec xautolock -time 5 -locker "/bin/lock" &
-exec --no-startup-id nitrogen --restore
-# exec --no-startup-id feh --bg-fill /usr/share/backgrounds/xgu472hf2_by_lariliikala.jpg
-
-# Media keys
-bindcode 123 exec pactl set-sink-volume 1 +10%
-bindcode 122 exec pactl set-sink-volume 1 -10%
-bindcode 121 exec pactl set-sink-mute 1 toggle
-
 
 # Apps launching in floating mode
 for_window [class="Lxappearance"] floating enable
@@ -138,7 +128,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # screen lock
-bindsym Control+Mod1+l exec "/bin/lock"
+bindsym Control+Mod1+l exec "/bin/lock.sh"
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -183,7 +173,7 @@ bar {
     statusline #93a1a1
     focused_workspace #eee8d5 #859900 #073642
     active_workspace #fdf6e3 #6c71c4 #fdf6e3
-    inactive_workspace #586e75 #93a1a1 #002b36
+    inactive_workspace #002b36 #586e75 #abada9
     urgent_workspace #d33682 #d33682 #fdf6e3
   }
 }
@@ -191,7 +181,4 @@ bar {
 client.focused #495664 #495664 #eee8d5 #495664
 client.unfocused #073642 #073642 #93a1a1 #073642
 client.focused_inactive #495664 #495664 #93a1a1 #495664
-#client.focused #859900 #859900 #073642 #859900
-#client.focused_inactive #657b83 #657b83 #073642 #657b83
-#client.unfocused #586e75 #586e75 #073642 #586e75
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
