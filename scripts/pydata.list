@@ -1,0 +1,17 @@
+numexpr
+tables
+patsy
+pyzmq
+Pillow
+matplotlib
+seaborn
+scikit-learn
+scikit-image
+scikit-bio
+statsmodels
+pandas
+screed
+pysam
+ipython
+jupyter
+bokeh
