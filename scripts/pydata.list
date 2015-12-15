@@ -1,3 +1,4 @@
+--no-binary numpy numpy
 numexpr
 tables
 patsy

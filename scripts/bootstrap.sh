@@ -49,10 +49,8 @@ setup_env() {
 
     pyvenv $VENV_DIR/pydata3
     source $VENV_DIR/pydata3/bin/activate
-    for package in $(cat $pydata)
-    do
-        pip install $package
-    done
+    pip install -U pip
+    cat $pydata | xargs -n 1 -L 1 pip install
     deactivate
 }
 
@@ -60,12 +58,11 @@ setup_i3() {
     local dir="$(cd "$(dirnaame ${BASH_SOURCE[0]})" && pwd)"
     local wrapper="i3-wrapper.sh"
     local locker="lock.sh"
-    sudo sh -c echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list
+    echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" | sudo tee -a /etc/apt/sources.list > /dev/null
     sudo apt-get update
     sudo apt-get install --allow-unauthenticated sur5r-keyring
     sudo apt-get update
     sudo apt-get install i3 compton imagemagick scrot nitrogen
-    # TODO: update-alternatives for d3menu
     cd $dir
     if [ ! -d "$HOME/.i3" ]
     then
@@ -82,11 +79,65 @@ setup_i3() {
     cd -
 }
 
-main() {
-    install_core
-    install_google
-    setup_env
-    setup_i3
+show_help() {
+    cat <<EOF
+    usage: $0 options
+
+    Bootstraps a new ubuntu GNOME install to upgrade to the latest GNOME version, 
+    setup most common dev dependencies, python stack, google browser and plugin, 
+    and i3 windows manager.
+
+    OPTIONS:
+
+    -h | --help     display this help text and exit
+    -c | --core     upgrade GNOME to latest version, install dev dependencies,
+                    install bioinformatics a nd data analysis packages
+    -g | --google   install google chrome (beta channel) and google talk plugin
+    -i | --i3       set up i3 windows manager and compton compositor
+    -e | --env      set up python 3 virtualenv with data analysis/bioinformatics stack
+                    as specified in pydata.list
+    -a | --all      all of the above
+EOF
 }
 
-main
+readonly OPTS=`getopt -o acgeih --long all,core,google,env,i3,help -n 'bootstrap.sh' -- "$@"`
+
+if [ $? != 0 ] ; then echo "Failed to parse options." >&2; exit 1; fi
+eval set -- "$OPTS"
+
+while true
+do
+    case "$1" in
+        -a|--all)
+            install_core
+            install_google
+            setup_env
+            setup_i3
+            shift
+            ;;
+        -c|--core)
+            install_core
+            shift
+            ;;
+        -g|--google)
+            install_google
+            shift
+            ;;
+        -e|--env)
+            setup_env
+            shift
+            ;;
+        -i|--i3)
+            setup_i3
+            shift
+            ;;
+        -h|--help)
+            show_help
+            exit 1
+            ;;
+        * )
+            break
+            ;;
+    esac
+done
+
