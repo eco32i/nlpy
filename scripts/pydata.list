@@ -1,3 +1,4 @@
+cython
 --no-binary numpy numpy
 numexpr
 tables

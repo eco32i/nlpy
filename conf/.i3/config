@@ -35,7 +35,7 @@ for_window [window_role="pop-up"] floating enable
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango:Cantarell 12
+font pango:Cantarell 20px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -51,7 +51,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -nb "#fdf6e3" -nf "#586e75" -sf "#fdf6e3" -sb "#b58900" -fn "Inconsolata 10px"'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -nb "#fdf6e3" -nf "#586e75" -sf "#fdf6e3" -sb "#b58900" -fn "Inconsolata:pixelsize=24"'
 
 # change focus
 bindsym $mod+j focus left
@@ -166,7 +166,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
   status_command i3status
-  font pango: Cantarell 12
+  font pango:Cantarell 20px
   colors {
     separator #dc322f
     background #002b36
@@ -182,6 +182,7 @@ client.focused #495664 #495664 #eee8d5 #495664
 client.unfocused #073642 #073642 #93a1a1 #073642
 client.focused_inactive #495664 #495664 #93a1a1 #495664
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
+font pango:Cantarell 20px
 # Media keys
 bindcode 123 exec pactl set-sink-volume 1 +10%
 bindcode 122 exec pactl set-sink-volume 1 -10%
