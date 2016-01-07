@@ -16,7 +16,7 @@ install_core() {
         Trimmomatic julia r-base vienna-rna \
         libopenblas-base libopenblas-dev gfortran g++ python-pip \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
-        libatlas3gf-base libatlas-dev python3-venv libxml2-dev libxslt-dev
+        libhdf5-dev libatlas3gf-base libatlas-dev python3-venv libxml2-dev libxslt-dev
     sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
     sudo update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
     sudo update-alternatives --set liblapack.so.3 /usr/lib/openblas-base/liblapack.so.3
