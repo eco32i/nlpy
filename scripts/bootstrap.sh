@@ -11,12 +11,12 @@ install_core() {
         sudo add-apt-repository -y $ppa
     done
     sudo apt-get update
-    sudo apt-get install -y byobu htop vim fonts-inconsolata openssh-server gtk2-engines-murrine \
+    sudo apt-get install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python-dev python3-dev build-essential cmake git linux-headers-generic \
-        Trimmomatic julia r-base vienna-rna \
+        trimmomatic julia r-base  libhdf5-10 hdf5-tools \
         libopenblas-base libopenblas-dev gfortran g++ python-pip \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
-        libhdf5-dev libatlas3gf-base libatlas-dev python3-venv libxml2-dev libxslt-dev
+        libhdf5-dev libatlas3-base libatlas-dev python3-venv libxml2-dev libxslt-dev
     sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
     sudo update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
     sudo update-alternatives --set liblapack.so.3 /usr/lib/openblas-base/liblapack.so.3
@@ -27,13 +27,12 @@ install_google() {
         case `uname -i` in
             i386|i486|i586|i686)
             wget $base_url/google-chrome-beta_current_i386.deb
-            wget $base_url/google-talkplugin_current_i386.deb
             ;;
         x86_64)
             wget $base_url/google-chrome-beta_current_amd64.deb
-            wget $base_url/google-talkplugin_current_amd64.deb
             ;;
     esac
+    sudo apt-get install libappindicator7 libindicator7
     sudo dpkg -i google*.deb
     sudo apt-get install -fy
     rm google*.deb
@@ -55,7 +54,7 @@ setup_env() {
 }
 
 setup_i3() {
-    local dir="$(cd "$(dirnaame ${BASH_SOURCE[0]})" && pwd)"
+    local dir="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
     local wrapper="i3-wrapper.sh"
     local locker="lock.sh"
     echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" | sudo tee -a /etc/apt/sources.list > /dev/null

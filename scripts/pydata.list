@@ -1,3 +1,4 @@
+wheel
 cython
 --no-binary numpy numpy
 numexpr
@@ -14,6 +15,7 @@ statsmodels
 pandas
 screed
 pysam
+pybedtools
 ipython
 jupyter
 bokeh

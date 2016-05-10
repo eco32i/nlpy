@@ -182,12 +182,3 @@ client.focused #495664 #495664 #eee8d5 #495664
 client.unfocused #073642 #073642 #93a1a1 #073642
 client.focused_inactive #495664 #495664 #93a1a1 #495664
 client.urgent #d33682 #d33682 #fdf6e3 #dc322f
-font pango:Cantarell 20px
-# Media keys
-bindcode 123 exec pactl set-sink-volume 1 +10%
-bindcode 122 exec pactl set-sink-volume 1 -10%
-bindcode 121 exec pactl set-sink-mute 1 toggle
-
-# ASUS Zenbook keyboard backlight
-bindcode 237 exec --no-startup-id kbd_backlight_decrease.sh
-bindcode 238 exec --no-startup-id kbd_backlight_increase.sh
