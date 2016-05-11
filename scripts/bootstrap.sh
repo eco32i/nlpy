@@ -62,20 +62,21 @@ setup_i3() {
     sudo apt-get install --allow-unauthenticated sur5r-keyring
     sudo apt-get update
     sudo apt-get install i3 compton imagemagick scrot nitrogen
-    cd $dir
+    old_dir=$(pwd)
+    cd $dir && cd ..
     if [ ! -d "$HOME/.i3" ]
     then
-        ln -s ../$dir $HOME/.i3
+        ln -s conf/.i3 $HOME/.i3
     fi
-    if [ ! -e "$wrapper" ]
+    if [ ! -e "/usr/bin/$wrapper" ]
     then
-        sudo cp $wrapper /usr/bin
+        sudo cp utils/$wrapper /usr/bin
     fi
-    if [ ! -e "$locker" ]
+    if [ ! -e "/usr/bin/$locker" ]
     then
-        sudo cp $locker /usr/bin
+        sudo cp utils/$locker /usr/bin
     fi
-    cd -
+    cd $old_dir
 }
 
 show_help() {
