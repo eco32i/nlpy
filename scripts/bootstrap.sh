@@ -68,17 +68,31 @@ setup_i3() {
     then
         ln -s conf/.i3 $HOME/.i3
     fi
-    if [ ! -e "/usr/bin/$wrapper" ]
+    if [ ! -e "/bin/$wrapper" ]
     then
-        sudo cp utils/$wrapper /usr/bin
+        sudo cp utils/$wrapper /bin
     fi
-    if [ ! -e "/usr/bin/$locker" ]
+    if [ ! -e "/bin/$locker" ]
     then
-        sudo cp utils/$locker /usr/bin
+        sudo cp utils/$locker /bin
     fi
     cd $old_dir
 }
 
+setup_vim() {
+    local vim_dir="$HOME/.vim"
+    if [ -d "$vim_dir" ]
+    then
+        rm -rf $vim_dir
+    fi
+
+    git clone https://github.com/VundleVim/Vundle.vim.git $vim_dir/bundle/Vundle.vim
+    git clone https://github.com/Valloric/YouCompleteMe.git $vim_dir/bundle/YouCompleteMe
+    cd $vim_dir/bundle/YouCompleteMe && git submodule update --init --recursive
+    ./install.py --clang-completer
+    cd -
+}
+    
 show_help() {
     cat <<EOF
     usage: $0 options
@@ -96,11 +110,13 @@ show_help() {
     -i | --i3       set up i3 windows manager and compton compositor
     -e | --env      set up python 3 virtualenv with data analysis/bioinformatics stack
                     as specified in pydata.list
+    -v | --vim      setup vim plugin management (Vundle) and YouCompleteMe
+                    autocompleter
     -a | --all      all of the above
 EOF
 }
 
-readonly OPTS=`getopt -o acgeih --long all,core,google,env,i3,help -n 'bootstrap.sh' -- "$@"`
+readonly OPTS=`getopt -o acgeihv --long all,core,google,env,i3,help,vim -n 'bootstrap.sh' -- "$@"`
 
 if [ $? != 0 ] ; then echo "Failed to parse options." >&2; exit 1; fi
 eval set -- "$OPTS"
@@ -133,6 +149,10 @@ do
             ;;
         -h|--help)
             show_help
+            shift
+            ;;
+        -v|--vim)
+            setup_vim
             exit 1
             ;;
         * )
