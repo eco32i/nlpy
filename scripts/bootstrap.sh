@@ -32,7 +32,7 @@ install_google() {
             wget $base_url/google-chrome-beta_current_amd64.deb
             ;;
     esac
-    sudo apt-get install libappindicator7 libindicator7
+    sudo apt-get install libappindicator1 libindicator7
     sudo dpkg -i google*.deb
     sudo apt-get install -fy
     rm google*.deb
