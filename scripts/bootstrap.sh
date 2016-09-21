@@ -61,7 +61,7 @@ setup_i3() {
     sudo apt-get update
     sudo apt-get install --allow-unauthenticated sur5r-keyring
     sudo apt-get update
-    sudo apt-get install i3 compton imagemagick scrot nitrogen
+    sudo apt-get install i3 compton imagemagick scrot nitrogen xautolock
     old_dir=$(pwd)
     cd $dir && cd ..
     if [ ! -d "$HOME/.i3" ]
