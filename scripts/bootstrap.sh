@@ -10,14 +10,14 @@ install_core() {
     do
         sudo add-apt-repository -y $ppa
     done
-    sudo apt-get update
-    sudo apt-get install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
+    sudo apt update
+    sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic julia r-base  libhdf5-10 hdf5-tools \
+        trimmomatic julia r-base  libhdf5-100 hdf5-tools \
         libopenblas-base libopenblas-dev gfortran g++ python-pip \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
-        libhdf5-dev libatlas3-base libatlas-dev python3-venv libxml2-dev libxslt-dev
-    sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
+        libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
+    sudo apt upgrade -y && sudo apt dist-upgrade -y
     sudo update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
     sudo update-alternatives --set liblapack.so.3 /usr/lib/openblas-base/liblapack.so.3
 }
@@ -57,11 +57,15 @@ setup_i3() {
     local dir="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
     local wrapper="i3-wrapper.sh"
     local locker="lock.sh"
-    echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" | sudo tee -a /etc/apt/sources.list > /dev/null
-    sudo apt-get update
-    sudo apt-get install --allow-unauthenticated sur5r-keyring
-    sudo apt-get update
-    sudo apt-get install i3 compton imagemagick scrot nitrogen
+    /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2018.01.30_all.deb keyring.deb SHA256:baa43dbbd7232ea2b5444cae238d53bebb9d34601cc000e82f11111b1889078a
+    sudo dpkg -i ./keyring.deb
+    disecho "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
+
+    #echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" | sudo tee -a /etc/apt/sources.list > /dev/null
+    sudo apt update
+    # sudo apt-get install --allow-unauthenticated sur5r-keyring
+    # sudo apt update
+    sudo apt install i3 compton imagemagick scrot nitrogen
     old_dir=$(pwd)
     cd $dir && cd ..
     if [ ! -d "$HOME/.i3" ]
