@@ -1,0 +1,10 @@
+[Unit]
+Description=Keeps a tunnel to lab.nudlerlab.info alive
+After=network-online.target
+
+[Service]
+User=ilya
+ExecStart=/usr/bin/autossh -N -R 8878:localhost:22 ilya@lab.nudlerlab.info -i /home/ilya/.ssh/id_rsa &
+
+[Install]
+WantedBy=multi-user.target
