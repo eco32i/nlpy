@@ -13,7 +13,7 @@ install_core() {
     sudo apt update
     sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic  r-base  libhdf5-100 hdf5-tools \
+        trimmomatic r-base libhdf5-100 hdf5-tools papirus-icon-theme arc-theme \
         libopenblas-base libopenblas-dev gfortran g++ python-pip \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
