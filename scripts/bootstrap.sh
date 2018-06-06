@@ -63,7 +63,7 @@ setup_i3() {
     echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
 
     sudo apt update
-    sudo apt install i3 imagemagick scrot nitrogen
+    sudo apt install i3 xautolock imagemagick scrot nitrogen
     old_dir=$(pwd)
     cd $dir && cd ..
     if [ ! -d "$HOME/.i3" ]

@@ -16,7 +16,7 @@ set $mod Mod4
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #exec --no-startup-id gnome-settings-daemon
-exec xautolock -time 5 -locker "/bin/lock.sh" &
+exec --no-startup-id xautolock -time 5 -locker "/bin/lock.sh" 
 exec --no-startup-id nitrogen --restore
 
 # Apps launching in floating mode
