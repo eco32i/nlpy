@@ -13,7 +13,7 @@ install_core() {
     sudo apt update
     sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic r-base libhdf5-100 hdf5-tools papirus-icon-theme arc-theme \
+        trimmomatic r-base libhdf5-100 hdf5-tools \
         libopenblas-base libopenblas-dev gfortran g++ python-pip fonts-cantarell \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
@@ -95,6 +95,19 @@ setup_vim() {
     cd -
 }
     
+setup_theme() {
+    local theme_dir="$HOME/.themes"
+    local font_dir="$HOME/.fonts"
+    sudo apt install libgtk-3-dev sassc papirus-icon-theme
+    git clone htts://github.com/eco32i/Arc-theme $theme_dir
+    cd $theme_dir
+    ./autogen.sh --prefix=/usr
+    sudo make install
+    cd -
+    gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
+    gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+}
+
 show_help() {
     cat <<EOF
     usage: $0 options
