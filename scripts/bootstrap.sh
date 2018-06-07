@@ -98,8 +98,9 @@ setup_vim() {
 setup_theme() {
     local theme_dir="$HOME/.themes"
     local font_dir="$HOME/.fonts"
-    sudo apt install libgtk-3-dev sassc papirus-icon-theme
-    git clone htts://github.com/eco32i/Arc-theme $theme_dir
+    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpaper* \
+        gnome-backgrounds gnome-extensions gnome-tweaks gnome-tweak-tool
+    git clone https://github.com/eco32i/Arc-theme $theme_dir
     cd $theme_dir
     ./autogen.sh --prefix=/usr
     sudo make install
