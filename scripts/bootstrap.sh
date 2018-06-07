@@ -127,6 +127,7 @@ show_help() {
                     as specified in pydata.list
     -v | --vim      setup vim plugin management (Vundle) and YouCompleteMe
                     autocompleter
+    -t | --theme    install a fork of Arc-theme and papirus-icon-theme
     -a | --all      all of the above
 EOF
 }
