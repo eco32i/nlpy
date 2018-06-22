@@ -63,7 +63,7 @@ setup_i3() {
     echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
 
     sudo apt update
-    sudo apt install i3 xautolock imagemagick scrot nitrogen
+    sudo apt install -y i3 xautolock imagemagick scrot nitrogen
     old_dir=$(pwd)
     cd $dir && cd ..
     if [ ! -d "$HOME/.i3" ]
@@ -98,8 +98,8 @@ setup_vim() {
 setup_theme() {
     local theme_dir="$HOME/.themes"
     local font_dir="$HOME/.fonts"
-    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpaper* \
-        gnome-backgrounds gnome-extensions gnome-tweaks gnome-tweak-tool
+    sudo apt install -y libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpaper* \
+        gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool
     git clone https://github.com/eco32i/Arc-theme $theme_dir
     cd $theme_dir
     ./autogen.sh --prefix=/usr
