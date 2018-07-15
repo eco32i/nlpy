@@ -19,3 +19,4 @@ pybedtools
 ipython
 jupyter
 bokeh
+plotnine
