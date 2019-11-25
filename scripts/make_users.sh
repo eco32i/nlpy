@@ -25,6 +25,7 @@ do
     scp credentials.txt ${MAILSERVER}:~
     SENDMAIL="ssh $MAILSERVER \"mail -s '[snowflake login]' -c $ADMIN $email < credentials.txt\" < /dev/null"
     eval $SENDMAIL
+    sleep 5
     echo "Created user: $uname"
 done <$USERS
 
