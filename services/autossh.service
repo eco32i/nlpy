@@ -1,0 +1,12 @@
+[Unit]
+Description=Keeps a tunnel to a VPS alive
+After=network-online.target
+
+[Service]
+User=ilya
+ExecStart=/usr/bin/autossh -N -R 8878:localhost:22 user@vps -i /home/user/.ssh/id_rsa &
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
