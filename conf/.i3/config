@@ -167,7 +167,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
   status_command i3status
-  font pango:Cantarell 20px
+  font pango:Cantarell 24px
   colors {
     separator #dc322f
     background #002b36
