@@ -13,8 +13,8 @@ install_core() {
     sudo apt update
     sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic r-base libhdf5-100 hdf5-tools \
-        libopenblas-base libopenblas-dev gfortran g++ python-pip fonts-cantarell \
+        trimmomatic r-base libhdf5-103 hdf5-tools \
+        libopenblas-base libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
     sudo apt upgrade -y && sudo apt dist-upgrade -y
@@ -57,7 +57,7 @@ setup_i3() {
     local dir="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
     local wrapper="i3-wrapper.sh"
     local locker="lock.sh"
-    /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2019.02.01_all.deb keyring.deb SHA256:176af52de1a976f103f9809920d80d02411ac5e763f695327de9fa6aff23f416
+    /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2020.02.03_all.deb keyring.deb SHA256:c5dd35231930e3c8d6a9d9539c846023fe1a08e4b073ef0d2833acd815d80d48
     sudo dpkg -i ./keyring.deb
     rm -rf ./keyring.deb
     echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
