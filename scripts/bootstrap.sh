@@ -57,7 +57,7 @@ setup_i3() {
     local dir="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
     local wrapper="i3-wrapper.sh"
     local locker="lock.sh"
-    /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2020.02.03_all.deb keyring.deb SHA256:c5dd35231930e3c8d6a9d9539c846023fe1a08e4b073ef0d2833acd815d80d48
+    /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2021.02.02_all.deb keyring.deb SHA256:cccfb1dd7d6b1b6a137bb96ea5b5eef18a0a4a6df1d6c0c37832025d2edaa710
     sudo dpkg -i ./keyring.deb
     rm -rf ./keyring.deb
     echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
@@ -98,7 +98,7 @@ setup_vim() {
 setup_theme() {
     local theme_dir="$HOME/.themes"
     local font_dir="$HOME/.fonts"
-    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpaper* \
+    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
         gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool
     git clone https://github.com/eco32i/Arc-theme $theme_dir
     cd $theme_dir
