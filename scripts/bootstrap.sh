@@ -18,8 +18,6 @@ install_core() {
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
     sudo apt upgrade -y && sudo apt dist-upgrade -y
-    #sudo update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
-    #sudo update-alternatives --set liblapack.so.3 /usr/lib/openblas-base/liblapack.so.3
 }
 
 install_google() {
@@ -32,9 +30,9 @@ install_google() {
             wget $base_url/google-chrome-beta_current_amd64.deb
             ;;
     esac
-    sudo apt-get install libappindicator1 libindicator7
+    sudo apt install libappindicator1 libindicator7
     sudo dpkg -i google*.deb
-    sudo apt-get install -fy
+    sudo apt install -fy
     rm google*.deb
 }
 
@@ -96,9 +94,9 @@ setup_vim() {
 }
     
 setup_theme() {
-    local theme_dir="$HOME/.themes"
+    local theme_dir="$HOME/.themes/"
     local font_dir="$HOME/.fonts"
-    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpaper* \
+    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
         gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool
     git clone https://github.com/eco32i/Arc-theme $theme_dir
     cd $theme_dir
