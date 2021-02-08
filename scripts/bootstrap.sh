@@ -5,7 +5,7 @@ clear
 readonly VENV_DIR=$HOME/.venv
 
 install_core() {
-    local ppas="ppa.list"
+    local ppas="ppa.txt"
     for ppa in $(cat $ppas)
     do
         sudo add-apt-repository -y $ppa
@@ -37,7 +37,7 @@ install_google() {
 }
 
 setup_env() {
-    local pydata="pydata.list"
+    local pydata="pydata.txt"
     
     if [ -d $VENV_DIR/pydata3 ]
     then
@@ -61,7 +61,7 @@ setup_i3() {
     echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
 
     sudo apt update
-    sudo apt install i3 xautolock imagemagick scrot nitrogen
+    sudo apt install i3 xautolock imagemagick scrot nitrogen -y
     old_dir=$(pwd)
     cd $dir && cd ..
     if [ ! -d "$HOME/.i3" ]
@@ -97,7 +97,7 @@ setup_theme() {
     local theme_dir="$HOME/.themes/"
     local font_dir="$HOME/.fonts"
     sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
-        gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool
+      gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool -y
     git clone https://github.com/eco32i/Arc-theme $theme_dir
     cd $theme_dir
     ./autogen.sh --prefix=/usr
@@ -144,6 +144,8 @@ do
             install_google
             setup_env
             setup_i3
+            setup_vim
+            setup_theme
             shift
             ;;
         -c|--core)
