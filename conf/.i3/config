@@ -12,10 +12,10 @@
 set $mod Mod4
 
 # exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/FootFall.png
-# exec compton --config ~/.config/compton.conf -b
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
-#exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id gnome-flashback
+exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id xautolock -time 5 -locker "/bin/lock.sh" 
 exec --no-startup-id nitrogen --restore
 
@@ -24,9 +24,9 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="File-roller"] floating enable
 for_window [class="Eog"] floating enable
 for_window [class="Nitrogen"] floating enable
-for_window [class="Calculator"] floating enable
+for_window [title="Calculator"] floating enable
 for_window [class="Software-properties-gtk"] floating enable
-for_window [class="Gnome-tweak-tool"] floating enable
+for_window [title="GNOME Tweaks"] floating enable
 for_window [window_role="pop-up"] floating enable 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -40,6 +40,9 @@ font pango:Cantarell 20px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Focus does NOT follow mouse
+focus_follows_mouse no
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
