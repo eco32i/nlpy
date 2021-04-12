@@ -97,12 +97,15 @@ setup_theme() {
     local theme_dir="$HOME/.themes/"
     local font_dir="$HOME/.fonts"
     sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
-      gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool -y
+      gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool \
+      gnome-shell-extension-pixelsaver -y
     git clone https://github.com/eco32i/Arc-theme $theme_dir
     cd $theme_dir
     ./autogen.sh --prefix=/usr
     sudo make install
     cd -
+    gnome-extensions enable pixel-saver@deadlnix.me
+    gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
     gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
     gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 }
