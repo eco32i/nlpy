@@ -95,14 +95,20 @@ setup_vim() {
     
 setup_theme() {
     local theme_dir="$HOME/.themes/"
-    local font_dir="$HOME/.fonts"
     sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
       gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool \
       gnome-shell-extension-pixelsaver -y
-    git clone https://github.com/eco32i/Arc-theme $theme_dir
+    if [ -d "$theme_dir" ]
+    then 
+        rm -rf $theme_dir
+    fi
+
+    git clone https://github.com/eco32i/arc-theme $theme_dir
     cd $theme_dir
-    ./autogen.sh --prefix=/usr
-    sudo make install
+    pipenv install --three meson
+    pipenv run meson setup --prefix=$HOME/.local -Dvariants=dark \
+        -Dthemes=gnome-shell,gtk2,gtk3,metacity build/
+    pipenv run meson install -C build/
     cd -
     gnome-extensions enable pixel-saver@deadlnix.me
     gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
