@@ -29,6 +29,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 " Shortcuts
 " ==========================================================
 let mapleader=","             " change the leader to be a comma vs slash
+imap jk <Esc>
 
 " sudo write this
 cmap W! w !sudo tee % >/dev/null

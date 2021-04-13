@@ -12,10 +12,10 @@
 set $mod Mod4
 
 # exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/FootFall.png
-# exec compton --config ~/.config/compton.conf -b
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
-#exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id gnome-flashback
+exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id xautolock -time 5 -locker "/bin/lock.sh" 
 exec --no-startup-id nitrogen --restore
 
