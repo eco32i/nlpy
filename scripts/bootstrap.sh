@@ -76,6 +76,13 @@ setup_i3() {
     then
         sudo cp utils/$locker /bin
     fi
+    if [ ! -e "$HOME/src/i3-gnome" ]
+    then
+        mkdir -p "$HOME/src/i3-gnome"
+        git clone https://github.com/i3-gnome/i3-gnome.git "$HOME/src/i3-gnome"
+    fi
+    cd "$HOME/src/i3-gnome"
+    sudo make install
     cd $old_dir
 }
 
