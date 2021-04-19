@@ -49,6 +49,7 @@ setup_env() {
     pip install -U pip
     cat $pydata | xargs -n 1 -L 1 pip install
     deactivate
+    pip3 install --user pipenv
 }
 
 setup_i3() {
