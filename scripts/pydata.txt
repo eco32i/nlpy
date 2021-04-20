@@ -18,5 +18,6 @@ pysam
 pybedtools
 ipython
 jupyter
+jupyterlab
 bokeh
 plotnine

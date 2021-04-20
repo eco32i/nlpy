@@ -5,7 +5,7 @@ clear
 readonly VENV_DIR=$HOME/.venv
 
 install_core() {
-    local ppas="ppa.list"
+    local ppas="ppa.txt"
     for ppa in $(cat $ppas)
     do
         sudo add-apt-repository -y $ppa
@@ -13,13 +13,11 @@ install_core() {
     sudo apt update
     sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic r-base libhdf5-100 hdf5-tools \
-        libopenblas-base libopenblas-dev gfortran g++ python-pip fonts-cantarell \
+        trimmomatic r-base libhdf5-103 hdf5-tools ninja-build inkscape \
+        libopenblas-base libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
     sudo apt upgrade -y && sudo apt dist-upgrade -y
-    #sudo update-alternatives --set libblas.so.3 /usr/lib/openblas-base/libblas.so.3
-    #sudo update-alternatives --set liblapack.so.3 /usr/lib/openblas-base/liblapack.so.3
 }
 
 install_google() {
@@ -32,14 +30,14 @@ install_google() {
             wget $base_url/google-chrome-beta_current_amd64.deb
             ;;
     esac
-    sudo apt-get install libappindicator1 libindicator7
+    sudo apt install libappindicator1 libindicator7
     sudo dpkg -i google*.deb
-    sudo apt-get install -fy
+    sudo apt install -fy
     rm google*.deb
 }
 
 setup_env() {
-    local pydata="pydata.list"
+    local pydata="pydata.txt"
     
     if [ -d $VENV_DIR/pydata3 ]
     then
@@ -51,19 +49,20 @@ setup_env() {
     pip install -U pip
     cat $pydata | xargs -n 1 -L 1 pip install
     deactivate
+    pip3 install --user pipenv
 }
 
 setup_i3() {
     local dir="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
     local wrapper="i3-wrapper.sh"
     local locker="lock.sh"
-    /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2019.02.01_all.deb keyring.deb SHA256:176af52de1a976f103f9809920d80d02411ac5e763f695327de9fa6aff23f416
+    /usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2021.02.02_all.deb keyring.deb SHA256:cccfb1dd7d6b1b6a137bb96ea5b5eef18a0a4a6df1d6c0c37832025d2edaa710
     sudo dpkg -i ./keyring.deb
     rm -rf ./keyring.deb
     echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
 
     sudo apt update
-    sudo apt install -y i3 xautolock imagemagick scrot nitrogen
+    sudo apt install i3 xautolock imagemagick scrot nitrogen -y
     old_dir=$(pwd)
     cd $dir && cd ..
     if [ ! -d "$HOME/.i3" ]
@@ -78,6 +77,13 @@ setup_i3() {
     then
         sudo cp utils/$locker /bin
     fi
+    if [ ! -e "$HOME/src/i3-gnome" ]
+    then
+        mkdir -p "$HOME/src/i3-gnome"
+        git clone https://github.com/i3-gnome/i3-gnome.git "$HOME/src/i3-gnome"
+    fi
+    cd "$HOME/src/i3-gnome"
+    sudo make install
     cd $old_dir
 }
 
@@ -96,15 +102,24 @@ setup_vim() {
 }
     
 setup_theme() {
-    local theme_dir="$HOME/.themes"
-    local font_dir="$HOME/.fonts"
-    sudo apt install -y libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpaper* \
-        gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool
-    git clone https://github.com/eco32i/Arc-theme $theme_dir
+    local theme_dir="$HOME/.themes/"
+    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
+      gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool \
+      gnome-shell-extension-pixelsaver -y
+    if [ -d "$theme_dir" ]
+    then 
+        rm -rf $theme_dir
+    fi
+
+    git clone https://github.com/eco32i/arc-theme $theme_dir
     cd $theme_dir
-    ./autogen.sh --prefix=/usr
-    sudo make install
+    pipenv install --three meson
+    pipenv run meson setup --prefix=$HOME/.local -Dvariants=dark \
+        -Dthemes=gnome-shell,gtk2,gtk3,metacity build/
+    pipenv run meson install -C build/
     cd -
+    gnome-extensions enable pixel-saver@deadlnix.me
+    gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
     gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
     gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
 }
@@ -146,6 +161,8 @@ do
             install_google
             setup_env
             setup_i3
+            setup_vim
+            setup_theme
             shift
             ;;
         -c|--core)
