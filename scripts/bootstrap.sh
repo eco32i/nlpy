@@ -13,7 +13,7 @@ install_core() {
     sudo apt update
     sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic r-base libhdf5-103 hdf5-tools ninja-build inkscape \
+        trimmomatic r-base libhdf5-103 hdf5-tools \
         libopenblas-base libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
@@ -105,7 +105,11 @@ setup_theme() {
     local theme_dir="$HOME/.themes/"
     sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
       gnome-backgrounds gnome-shell-extensions gnome-tweaks gnome-tweak-tool \
-      gnome-shell-extension-pixelsaver -y
+      gnome-shell-extension-pixelsaver inkscape ninja-build -y
+    if [ -z $(which pipenv) ]
+    then
+        pip3 install --user pipenv
+    fi
     if [ -d "$theme_dir" ]
     then 
         rm -rf $theme_dir
