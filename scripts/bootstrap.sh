@@ -114,6 +114,11 @@ setup_theme() {
     then 
         rm -rf $theme_dir
     fi
+    if ! [[ :$PATH: == *":.local/bin:"* ]]
+    then
+        echo "export PATH=$PATH:$HOME/.local/bin" >> $HOME/.bashrc
+        source $HOME/.bashrc
+    fi
 
     git clone https://github.com/eco32i/arc-theme $theme_dir
     cd $theme_dir
@@ -132,9 +137,8 @@ show_help() {
     cat <<EOF
     usage: $0 options
 
-    Bootstraps a new ubuntu GNOME install to upgrade to the latest GNOME version, 
-    setup most common dev dependencies, python stack, google browser and plugin, 
-    and i3 windows manager.
+    Bootstraps a new Ubuntu install to setup most common dev dependencies and bioinformatics software,
+    python stack, google browser, vim and a number of plugins, i3 windows manager and a custom GNOME theme based on Arc-Dark.
 
     OPTIONS:
 
