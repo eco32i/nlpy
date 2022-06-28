@@ -4,7 +4,7 @@ filetype off
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-let g:vundle_default_git_proto='git'
+let g:vundle_default_git_proto='https'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 
@@ -18,6 +18,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'LukeGoodsell/nextflow-vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'Lokaltog/powerline'
 
