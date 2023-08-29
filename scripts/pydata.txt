@@ -1,6 +1,6 @@
 wheel
 cython
---no-binary numpy numpy
+numpy
 numexpr
 tables
 patsy
