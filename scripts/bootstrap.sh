@@ -168,7 +168,7 @@ show_help() {
 EOF
 }
 
-readonly OPTS=`getopt -o acgeihvt --long all,core,google,env,i3,help,vim,theme  -n 'bootstrap.sh' -- "$@"`
+readonly OPTS=`getopt -o acgeihvnt --long all,core,google,env,i3,help,vim,nvim,theme  -n 'bootstrap.sh' -- "$@"`
 
 if [ $? != 0 ] ; then echo "Failed to parse options." >&2; exit 1; fi
 eval set -- "$OPTS"
