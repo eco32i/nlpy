@@ -47,7 +47,8 @@ setup_env() {
     python3 -m venv $VENV_DIR/pydata3
     source $VENV_DIR/pydata3/bin/activate
     pip install -U pip
-    cat $pydata | xargs -n 1 -L 1 pip install
+    pip install -r $pydata
+    #cat $pydata | xargs -n 1 -L 1 pip install
     deactivate
     pip3 install --user pipenv
 }
@@ -102,6 +103,14 @@ setup_vim() {
     ./install.py --clang-completer
     cd -
 }
+
+setup_neovim() {
+    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+    sudo mv nvim.appimage /usr/local/bin
+    sudo chmod u+x /usr/local/bin/nvim.appimage
+    sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
+    nvim --headless "+Lazy! sync" +qa
+}
     
 setup_theme() {
     local theme_dir="$HOME/.themes/"
@@ -153,6 +162,7 @@ show_help() {
                     as specified in pydata.list
     -v | --vim      setup vim plugin management (Vundle) and YouCompleteMe
                     autocompleter
+    -n | --nvim     setup neovim
     -t | --theme    install a fork of Arc-theme and papirus-icon-theme
     -a | --all      all of the above
 EOF
@@ -197,7 +207,11 @@ do
             ;;
         -v|--vim)
             setup_vim
-            exit 1
+            shift
+            ;;
+        -n|--nvim)
+            setup_neovim
+            shift
             ;;
         -t|--theme)
             setup_theme
