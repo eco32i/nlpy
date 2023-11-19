@@ -109,7 +109,9 @@ setup_neovim() {
     sudo mv nvim.appimage /usr/local/bin
     sudo chmod u+x /usr/local/bin/nvim.appimage
     sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
+    git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"
     nvim --headless "+Lazy! sync" +qa
+    sudo apt install ripgrep fd-find
 }
     
 setup_theme() {
