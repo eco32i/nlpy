@@ -105,13 +105,13 @@ setup_vim() {
 }
 
 setup_neovim() {
+    sudo apt fuse install ripgrep fd-find
     curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
     sudo mv nvim.appimage /usr/local/bin
     sudo chmod u+x /usr/local/bin/nvim.appimage
     sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
-    git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"
+    git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
     nvim --headless "+Lazy! sync" +qa
-    sudo apt install ripgrep fd-find
 }
     
 setup_theme() {
@@ -135,7 +135,8 @@ setup_theme() {
 
     git clone https://github.com/eco32i/arc-theme $theme_dir
     cd $theme_dir
-    pipenv install --three meson
+    export SETUPTOOLS_USE_DISTUTILS=stdlib
+    pipenv install meson
     pipenv run meson setup --prefix=$HOME/.local -Dvariants=dark \
         -Dthemes=gnome-shell,gtk2,gtk3,metacity build/
     pipenv run meson install -C build/
