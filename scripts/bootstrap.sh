@@ -12,9 +12,9 @@ install_core() {
     done
     sudo apt update
     sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
-        libcurl4-openssl-dev python2-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic r-base libhdf5-103 hdf5-tools curl \
-        libopenblas-base libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
+        libcurl4-openssl-dev python3-dev build-essential cmake git linux-headers-generic \
+        trimmomatic r-base libhdf5-103-1t64 hdf5-tools curl \
+        libopenblas0 libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
     sudo apt upgrade -y && sudo apt dist-upgrade -y
@@ -30,7 +30,6 @@ install_google() {
             wget $base_url/google-chrome-beta_current_amd64.deb
             ;;
     esac
-    sudo apt install libappindicator1 libindicator7
     sudo dpkg -i google*.deb
     sudo apt install -fy
     rm google*.deb
@@ -105,7 +104,7 @@ setup_vim() {
 }
 
 setup_neovim() {
-    sudo apt install fuse ripgrep fd-find -y
+    sudo apt install ripgrep fd-find -y
     curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
     sudo mv nvim.appimage /usr/local/bin
     sudo chmod u+x /usr/local/bin/nvim.appimage
