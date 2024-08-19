@@ -60,10 +60,10 @@ setup_i3() {
     #sudo dpkg -i ./keyring.deb
     #rm -rf ./keyring.deb
     #echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
-    #curl https://baltocdn.com/i3-window-manager/signing.asc | sudo apt-key add -
-    #sudo apt install apt-transport-https --yes
-    #echo "deb https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu/ all main" | sudo tee /etc/apt/sources.list.d/i3-autobuild.list
-    #sudo apt update
+    curl https://baltocdn.com/i3-window-manager/signing.asc | sudo apt-key add -
+    sudo apt install apt-transport-https --yes
+    echo "deb https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu/ all main" | sudo tee /etc/apt/sources.list.d/i3-autobuild.list
+    sudo apt update
     sudo apt install i3 xautolock imagemagick scrot nitrogen -y
     old_dir=$(pwd)
     cd $dir && cd ..
@@ -104,16 +104,16 @@ setup_vim() {
 }
 
 setup_neovim() {
-    sudo apt install ripgrep fd-find -y
-    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-    sudo mv nvim.appimage /usr/local/bin
-    sudo chmod u+x /usr/local/bin/nvim.appimage
-    sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
-    git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
-    nvim --headless "+Lazy! sync" +qa
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    sudo apt install fzf ripgrep fd-find -y
+    if [ ! -e "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"]
+    then
+        mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
+        git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
+    fi
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     source ~/.bashrc
     nvm install default
+    nvim --headless "+Lazy! sync" +qa
 }
     
 setup_theme() {
