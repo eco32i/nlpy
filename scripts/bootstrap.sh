@@ -13,7 +13,7 @@ install_core() {
     sudo apt update
     sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic r-base libhdf5-103-1t64 hdf5-tools curl \
+        trimmomatic r-base libhdf5-dev hdf5-tools curl \
         libopenblas0 libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
         samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
         tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
@@ -49,7 +49,7 @@ setup_env() {
     pip install -r $pydata
     #cat $pydata | xargs -n 1 -L 1 pip install
     deactivate
-    pip3 install --user pipenv
+    #pip3 install --user pipenv
 }
 
 setup_i3() {
@@ -105,10 +105,12 @@ setup_vim() {
 
 setup_neovim() {
     sudo apt install fzf ripgrep fd-find -y
+    sudo add-apt-repository ppa:neovim-ppa/unstable
+    sudo apt update && sudo apt install neovim -y
     if [ ! -e "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"]
     then
         mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
-        git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
+        git clone https://github.com/eco32i/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
     fi
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     source ~/.bashrc
