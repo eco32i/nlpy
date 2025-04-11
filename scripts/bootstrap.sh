@@ -49,7 +49,7 @@ setup_env() {
     pip install -r $pydata
     #cat $pydata | xargs -n 1 -L 1 pip install
     deactivate
-    pip3 install --user pipenv
+    # pip3 install --user pipenv
 }
 
 setup_i3() {
@@ -105,12 +105,17 @@ setup_vim() {
 
 setup_neovim() {
     sudo apt install fzf ripgrep fd-find -y
+    sudo add-apt-repository ppa:neovim-ppa/unstable
+    sudo apt update && sudo apt install neovim -y
+    curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+    sudo -E bash nodesource_setup.sh
+    sudo apt install -y nodejs npm
     if [ ! -e "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"]
     then
         mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
         git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
     fi
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    curl -o https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     source ~/.bashrc
     nvm install default
     nvim --headless "+Lazy! sync" +qa
