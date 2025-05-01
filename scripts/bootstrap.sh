@@ -105,7 +105,7 @@ setup_vim() {
 
 setup_neovim() {
     sudo apt install fzf ripgrep fd-find -y
-    sudo add-apt-repository ppa:neovim-ppa/stable
+    sudo add-apt-repository ppa:neovim-ppa/unstable
     sudo apt update && sudo apt install neovim -y
     
     if [ ! -e ~/.config/nvim ]
@@ -113,7 +113,7 @@ setup_neovim() {
         mkdir -p ~/.config/nvim
         git clone https://github.com/eco32i/kickstart.nvim.git ~/.config/nvim
     fi
-    curl -o https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    wget -q -O- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     source ~/.bashrc
     nvm install node
     nvim --headless "+Lazy! sync" +qa
