@@ -49,7 +49,7 @@ setup_env() {
     pip install -r $pydata
     #cat $pydata | xargs -n 1 -L 1 pip install
     deactivate
-    pip3 install --user pipenv
+    # pip3 install --user pipenv
 }
 
 setup_i3() {
@@ -113,7 +113,7 @@ setup_neovim() {
         mkdir -p ~/.config/nvim
         git clone https://github.com/eco32i/kickstart.nvim.git ~/.config/nvim
     fi
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    curl -o https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     source ~/.bashrc
     nvm install node
     nvim --headless "+Lazy! sync" +qa
