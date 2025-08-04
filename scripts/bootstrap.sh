@@ -107,14 +107,15 @@ setup_neovim() {
     sudo apt install fzf ripgrep fd-find -y
     sudo add-apt-repository ppa:neovim-ppa/unstable
     sudo apt update && sudo apt install neovim -y
-    if [ ! -e "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"]
+    
+    if [ ! -e ~/.config/nvim ]
     then
-        mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
-        git clone https://github.com/eco32i/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
+        mkdir -p ~/.config/nvim
+        git clone https://github.com/eco32i/kickstart.nvim.git ~/.config/nvim
     fi
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
     source ~/.bashrc
-    nvm install default
+    nvm install npm
     nvim --headless "+Lazy! sync" +qa
 }
     
