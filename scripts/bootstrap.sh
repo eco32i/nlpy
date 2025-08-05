@@ -5,13 +5,9 @@ clear
 readonly VENV_DIR=$HOME/.venv
 
 install_core() {
-    local ppas="ppa.txt"
-    for ppa in $(cat $ppas)
-    do
-        sudo add-apt-repository -y $ppa
-    done
     sudo apt update
-    sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
+    sudo apt install -y git buikd-essential byobu htop vim vim-nox \
+        fonts-inconsolata openssh-server gtk2-engines-murrine \
         libcurl4-openssl-dev python3-dev build-essential cmake git linux-headers-generic \
         trimmomatic r-base libhdf5-dev hdf5-tools curl \
         libopenblas0 libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
@@ -33,23 +29,6 @@ install_google() {
     sudo dpkg -i google*.deb
     sudo apt install -fy
     rm google*.deb
-}
-
-setup_env() {
-    local pydata="pydata.txt"
-    
-    if [ -d $VENV_DIR/pydata3 ]
-    then
-        rm -rf $VENV_DIR/pydata3
-    fi
-
-    python3 -m venv $VENV_DIR/pydata3
-    source $VENV_DIR/pydata3/bin/activate
-    pip install -U pip
-    pip install -r $pydata
-    #cat $pydata | xargs -n 1 -L 1 pip install
-    deactivate
-    #pip3 install --user pipenv
 }
 
 setup_i3() {
@@ -119,38 +98,6 @@ setup_neovim() {
     nvim --headless "+Lazy! sync" +qa
 }
     
-setup_theme() {
-    local theme_dir="$HOME/.themes/"
-    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
-      gnome-backgrounds gnome-shell-extensions gnome-tweaks \
-      inkscape ninja-build -y
-    if [ -z $(which pipenv) ]
-    then
-        pip3 install --user pipenv
-    fi
-    if [ -d "$theme_dir" ]
-    then 
-        rm -rf $theme_dir
-    fi
-    if ! [[ :$PATH: == *":.local/bin:"* ]]
-    then
-        echo "export PATH=$PATH:$HOME/.local/bin" >> $HOME/.bashrc
-        source $HOME/.bashrc
-    fi
-
-    git clone https://github.com/eco32i/arc-theme $theme_dir
-    cd $theme_dir
-    export SETUPTOOLS_USE_DISTUTILS=stdlib
-    pipenv install meson
-    pipenv run meson setup --prefix=$HOME/.local -Dvariants=dark \
-        -Dthemes=gnome-shell,gtk2,gtk3,metacity build/
-    pipenv run meson install -C build/
-    cd -
-   # gnome-extensions enable pixel-saver@deadlnix.me
-    gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
-    gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
-    gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
-}
 
 show_help() {
     cat <<EOF
@@ -166,17 +113,14 @@ show_help() {
                     install bioinformatics a nd data analysis packages
     -g | --google   install google chrome (beta channel) and google talk plugin
     -i | --i3       set up i3 windows manager and compton compositor
-    -e | --env      set up python 3 virtualenv with data analysis/bioinformatics stack
-                    as specified in pydata.list
     -v | --vim      setup vim plugin management (Vundle) and YouCompleteMe
                     autocompleter
     -n | --nvim     setup neovim
-    -t | --theme    install a fork of Arc-theme and papirus-icon-theme
     -a | --all      all of the above
 EOF
 }
 
-readonly OPTS=`getopt -o acgeihvnt --long all,core,google,env,i3,help,vim,nvim,theme  -n 'bootstrap.sh' -- "$@"`
+readonly OPTS=`getopt -o acgihvn --long all,core,google,i3,help,vim,nvim  -n 'bootstrap.sh' -- "$@"`
 
 if [ $? != 0 ] ; then echo "Failed to parse options." >&2; exit 1; fi
 eval set -- "$OPTS"
@@ -187,10 +131,9 @@ do
         -a|--all)
             install_core
             install_google
-            setup_env
             setup_i3
             setup_vim
-            setup_theme
+            setup_neovim
             shift
             ;;
         -c|--core)
@@ -199,10 +142,6 @@ do
             ;;
         -g|--google)
             install_google
-            shift
-            ;;
-        -e|--env)
-            setup_env
             shift
             ;;
         -i|--i3)
@@ -219,10 +158,6 @@ do
             ;;
         -n|--nvim)
             setup_neovim
-            shift
-            ;;
-        -t|--theme)
-            setup_theme
             shift
             ;;
         * )
