@@ -9,6 +9,7 @@ install_core() {
     local pkgs=(
         git
         build-essential
+        clang
         byobu
         htop
         autossh
@@ -29,6 +30,8 @@ install_core() {
         fonts-cantarell
         samtools
         bedtools
+        bwa
+        bowtie2
         libpng-dev
         libjpeg8-dev
         libfreetype6-dev
@@ -37,6 +40,7 @@ install_core() {
         libatlas-base-dev
         libxml2-dev
         libxslt1-dev
+        libpugixml-dev
         )
 
     sudo apt update && sudo apt upgrade -y
