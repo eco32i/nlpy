@@ -3,7 +3,7 @@
 tabs 4
 clear
 readonly VENV_DIR=$HOME/.venv
-readonly VERSION="25.04"
+readonly VERSION="25.10"
 
 install_core() {
     local pkgs=(
@@ -36,34 +36,25 @@ install_core() {
         libjpeg8-dev
         libfreetype6-dev
         libxft-dev
-        libatlas3-base
-        libatlas-base-dev
         libxml2-dev
         libxslt1-dev
         libpugixml-dev
         )
 
     sudo apt update && sudo apt upgrade -y
-    sudo apt install -y install "${pkgs[@]}"
+    sudo apt install -y "${pkgs[@]}"
 }
 
 install_google() {
     local base_url="https://dl.google.com/linux/direct"
-    case `uname -i` in
-        i386|i486|i586|i686)
-        wget $base_url/google-chrome-beta_current_i386.deb
-        ;;
-        x86_64)
-        wget $base_url/google-chrome-beta_current_amd64.deb
-        ;;
-    esac
+    wget $base_url/google-chrome-beta_current_amd64.deb
     sudo dpkg -i google*.deb
     sudo apt install -fy
     rm google*.deb
 }
 
 install_tools() {
-    sudo apt install -y tldr fzf ripgrep fd-find bat
+    sudo apt install -y fzf ripgrep fd-find bat
     # Install EZA
     sudo mkdir -p /etc/apt/keyrings
     wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
@@ -90,9 +81,9 @@ setup_neovim() {
         mkdir -p ~/.config/nvim
         git clone https://github.com/eco32i/kickstart.nvim.git ~/.config/nvim
     fi
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-    source ~/.bashrc
-    nvm install npm
+    #curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    #source ~/.bashrc
+    #nvm install npm
     nvim --headless "+Lazy! sync" +qa
 }
     
