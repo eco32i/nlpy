@@ -18,7 +18,6 @@ install_core() {
         gtk2-engines-murrine
         libcurl4-openssl-dev
         python3-dev
-        r-base
         libhdf5-dev
         hdf5-tools
         curl
@@ -54,7 +53,7 @@ install_google() {
 }
 
 install_tools() {
-    sudo apt install -y fzf ripgrep fd-find bat
+    sudo apt install -y ncdu fzf ripgrep fd-find bat
     # Install EZA
     sudo mkdir -p /etc/apt/keyrings
     wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
