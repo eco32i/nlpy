@@ -3,7 +3,7 @@
 tabs 4
 clear
 readonly VENV_DIR=$HOME/.venv
-readonly VERSION="26.04"
+readonly VERSION="26.04-development"
 readonly user=$(whoami)
 
 install_core() {
@@ -44,7 +44,7 @@ install_core() {
     sudo apt update && sudo apt upgrade -y
     sudo apt install -y "${pkgs[@]}"
     sudo groupadd lab
-    sudo usermod -aG $user lab
+    sudo usermod -aG lab $user
 }
 
 install_google() {
@@ -57,7 +57,7 @@ install_google() {
 
 install_tools() {
     sudo apt install -y ncdu fzf ripgrep fd-find bat
-    sudo npm install -g tldr
+    npm install -g tldr
     # Install EZA (latest)
     sudo mkdir -p /etc/apt/keyrings
     wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc \
@@ -96,16 +96,14 @@ install_server() {
     local pkgs=(
         nfs-common
         postgresql
-        postgreesql-contrib
-        docker-ce
-        docker-ce-cli
-        docker-ce-rootless-extras
-        docker-compose-plugin
-        docker-buildx-plugin
+        postgresql-contrib
+        docker.io
+        util-linux-extra
         nginx
     )
     sudo apt install -y "${pkgs[@]}"
-    sudo usermod -aG $user docker
+    sudo usermod -aG docker $user
+    sudo systemctl enable --now docker
 }
 
 
