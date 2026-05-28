@@ -3,7 +3,8 @@
 tabs 4
 clear
 readonly VENV_DIR=$HOME/.venv
-readonly VERSION="25.10"
+readonly VERSION="26.04"
+readonly user=$(whoami)
 
 install_core() {
     local pkgs=(
@@ -42,6 +43,8 @@ install_core() {
 
     sudo apt update && sudo apt upgrade -y
     sudo apt install -y "${pkgs[@]}"
+    sudo groupadd lab
+    sudo usermod -aG $user lab
 }
 
 install_google() {
@@ -54,10 +57,13 @@ install_google() {
 
 install_tools() {
     sudo apt install -y ncdu fzf ripgrep fd-find bat
-    # Install EZA
+    sudo npm install -g tldr
+    # Install EZA (latest)
     sudo mkdir -p /etc/apt/keyrings
-    wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
-    echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
+    wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc \
+        | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+    echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" \
+        | sudo tee /etc/apt/sources.list.d/gierens.list
     sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
     sudo apt update
     sudo apt install -y eza
@@ -86,6 +92,22 @@ setup_neovim() {
     nvim --headless "+Lazy! sync" +qa
 }
     
+install_server() {
+    local pkgs=(
+        nfs-common
+        postgresql
+        postgreesql-contrib
+        docker-ce
+        docker-ce-cli
+        docker-ce-rootless-extras
+        docker-compose-plugin
+        docker-buildx-plugin
+        nginx
+    )
+    sudo apt install -y "${pkgs[@]}"
+    sudo usermod -aG $user docker
+}
+
 
 show_help() {
     cat <<EOF
@@ -102,11 +124,12 @@ show_help() {
     -t | --tools    install useful command line tools
     -y | --hypr     install hyprland window manager
     -n | --nvim     setup neovim
+    -s | --server   install server software (nfs, postgres, nginx, docker)
     -a | --all      all of the above
 EOF
 }
 
-readonly OPTS=`getopt -o acgthyn --long all,core,google,tools,help,hypr,nvim  -n 'bootstrap.sh' -- "$@"`
+readonly OPTS=`getopt -o acgthyns --long all,core,google,tools,help,hypr,nvim,server  -n 'bootstrap.sh' -- "$@"`
 
 if [ $? != 0 ] ; then echo "Failed to parse options." >&2; exit 1; fi
 eval set -- "$OPTS"
@@ -120,6 +143,7 @@ do
             install_tools
             install_hypr
             setup_neovim
+            install_server
             shift
             ;;
         -c|--core)
@@ -144,6 +168,10 @@ do
             ;;
         -n|--nvim)
             setup_neovim
+            shift
+            ;;
+        -s|--server)
+            install_server
             shift
             ;;
         * )
