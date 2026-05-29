@@ -95,11 +95,13 @@ setup_neovim() {
 install_server() {
     local pkgs=(
         nfs-common
+        nfs-kernel-server
         postgresql
         postgresql-contrib
         docker.io
         util-linux-extra
         nginx
+        zfsutils-linux
     )
     sudo apt install -y "${pkgs[@]}"
     sudo usermod -aG docker $user
