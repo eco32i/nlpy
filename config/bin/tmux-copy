@@ -1,0 +1,12 @@
+#!/bin/sh
+# Copy stdin to the system clipboard, choosing the backend at copy time.
+# Falls back to an OSC 52 escape sequence, which works through SSH in most terminals.
+buf=$(cat)
+if [ -n "$WAYLAND_DISPLAY" ] && command -v wl-copy >/dev/null 2>&1; then
+    printf '%s' "$buf" | wl-copy
+elif [ -n "$DISPLAY" ] && command -v xclip >/dev/null 2>&1; then
+    printf '%s' "$buf" | xclip -selection clipboard -i
+else
+    # Handled by tmux itself when `set-clipboard on` is set; this keeps the helper usable alone.
+    printf '\033]52;c;%s\a' "$(printf '%s' "$buf" | base64 | tr -d '\n')" > /dev/tty 2>/dev/null || true
+fi

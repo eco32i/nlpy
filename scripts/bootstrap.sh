@@ -1,231 +1,129 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
+# shellcheck disable=SC2034  # shared globals are set/read across sourced files
+# Post-install setup for an Ubuntu server/workstation used for bioinformatics analysis.
+# This file only parses arguments and dispatches to scripts/modules/*.sh.
+set -Eeuo pipefail
 
-tabs 4
-clear
-readonly VENV_DIR=$HOME/.venv
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+readonly SCRIPT_DIR
 
-install_core() {
-    local ppas="ppa.txt"
-    for ppa in $(cat $ppas)
-    do
-        sudo add-apt-repository -y $ppa
-    done
-    sudo apt update
-    sudo apt install -y byobu htop vim vim-nox fonts-inconsolata openssh-server gtk2-engines-murrine \
-        libcurl4-openssl-dev python2-dev python3-dev build-essential cmake git linux-headers-generic \
-        trimmomatic r-base libhdf5-103 hdf5-tools curl \
-        libopenblas-base libopenblas-dev gfortran g++ python3-pip fonts-cantarell \
-        samtools bedtools libpng-dev libjpeg8-dev libfreetype6-dev libxft-dev \
-        tsocks libhdf5-dev libatlas3-base libatlas-base-dev python3-venv libxml2-dev libxslt1-dev
-    sudo apt upgrade -y && sudo apt dist-upgrade -y
-}
-
-install_google() {
-    local base_url="https://dl.google.com/linux/direct"
-        case `uname -i` in
-            i386|i486|i586|i686)
-            wget $base_url/google-chrome-beta_current_i386.deb
-            ;;
-        x86_64)
-            wget $base_url/google-chrome-beta_current_amd64.deb
-            ;;
-    esac
-    sudo apt install libappindicator1 libindicator7
-    sudo dpkg -i google*.deb
-    sudo apt install -fy
-    rm google*.deb
-}
-
-setup_env() {
-    local pydata="pydata.txt"
-    
-    if [ -d $VENV_DIR/pydata3 ]
-    then
-        rm -rf $VENV_DIR/pydata3
-    fi
-
-    python3 -m venv $VENV_DIR/pydata3
-    source $VENV_DIR/pydata3/bin/activate
-    pip install -U pip
-    pip install -r $pydata
-    #cat $pydata | xargs -n 1 -L 1 pip install
-    deactivate
-    pip3 install --user pipenv
-}
-
-setup_i3() {
-    local dir="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
-    local wrapper="i3-wrapper.sh"
-    local locker="lock.sh"
-    #/usr/lib/apt/apt-helper download-file https://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2022.02.17_all.deb keyring.deb SHA256:52053550c4ecb4e97c48900c61b2df4ec50728249d054190e8a0925addb12fc6
-    #sudo dpkg -i ./keyring.deb
-    #rm -rf ./keyring.deb
-    #echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" | sudo tee /etc/apt/sources.list.d/sur5r-i3.list
-    #curl https://baltocdn.com/i3-window-manager/signing.asc | sudo apt-key add -
-    #sudo apt install apt-transport-https --yes
-    #echo "deb https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu/ all main" | sudo tee /etc/apt/sources.list.d/i3-autobuild.list
-    #sudo apt update
-    sudo apt install i3 xautolock imagemagick scrot nitrogen -y
-    old_dir=$(pwd)
-    cd $dir && cd ..
-    if [ ! -d "$HOME/.i3" ]
-    then
-        ln -s conf/.i3 $HOME/.i3
-    fi
-    if [ ! -e "/bin/$wrapper" ]
-    then
-        sudo cp utils/$wrapper /bin
-    fi
-    if [ ! -e "/bin/$locker" ]
-    then
-        sudo cp utils/$locker /bin
-    fi
-    if [ ! -e "$HOME/src/i3-gnome" ]
-    then
-        mkdir -p "$HOME/src/i3-gnome"
-        git clone https://github.com/i3-gnome/i3-gnome.git "$HOME/src/i3-gnome"
-    fi
-    cd "$HOME/src/i3-gnome"
-    sudo make install
-    cd $old_dir
-}
-
-setup_vim() {
-    local vim_dir="$HOME/.vim"
-    if [ -d "$vim_dir" ]
-    then
-        rm -rf $vim_dir
-    fi
-
-    git clone https://github.com/VundleVim/Vundle.vim.git $vim_dir/bundle/Vundle.vim
-    git clone https://github.com/Valloric/YouCompleteMe.git $vim_dir/bundle/YouCompleteMe
-    cd $vim_dir/bundle/YouCompleteMe && git submodule update --init --recursive
-    ./install.py --clang-completer
-    cd -
-}
-
-setup_neovim() {
-    sudo apt install fuse ripgrep fd-find -y
-    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-    sudo mv nvim.appimage /usr/local/bin
-    sudo chmod u+x /usr/local/bin/nvim.appimage
-    sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
-    git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config/nvim}"
-    nvim --headless "+Lazy! sync" +qa
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    source ~/.bashrc
-    nvm install default
-}
-    
-setup_theme() {
-    local theme_dir="$HOME/.themes/"
-    sudo apt install libgtk-3-dev sassc papirus-icon-theme ubuntu-wallpapers \
-      gnome-backgrounds gnome-shell-extensions gnome-tweaks \
-      inkscape ninja-build -y
-    if [ -z $(which pipenv) ]
-    then
-        pip3 install --user pipenv
-    fi
-    if [ -d "$theme_dir" ]
-    then 
-        rm -rf $theme_dir
-    fi
-    if ! [[ :$PATH: == *":.local/bin:"* ]]
-    then
-        echo "export PATH=$PATH:$HOME/.local/bin" >> $HOME/.bashrc
-        source $HOME/.bashrc
-    fi
-
-    git clone https://github.com/eco32i/arc-theme $theme_dir
-    cd $theme_dir
-    export SETUPTOOLS_USE_DISTUTILS=stdlib
-    pipenv install meson
-    pipenv run meson setup --prefix=$HOME/.local -Dvariants=dark \
-        -Dthemes=gnome-shell,gtk2,gtk3,metacity build/
-    pipenv run meson install -C build/
-    cd -
-   # gnome-extensions enable pixel-saver@deadlnix.me
-    gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
-    gsettings set org.gnome.desktop.interface gtk-theme "Arc-Dark"
-    gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
-}
-
-show_help() {
-    cat <<EOF
-    usage: $0 options
-
-    Bootstraps a new Ubuntu install to setup most common dev dependencies and bioinformatics software,
-    python stack, google browser, vim and a number of plugins, i3 windows manager and a custom GNOME theme based on Arc-Dark.
-
-    OPTIONS:
-
-    -h | --help     display this help text and exit
-    -c | --core     upgrade GNOME to latest version, install dev dependencies,
-                    install bioinformatics a nd data analysis packages
-    -g | --google   install google chrome (beta channel) and google talk plugin
-    -i | --i3       set up i3 windows manager and compton compositor
-    -e | --env      set up python 3 virtualenv with data analysis/bioinformatics stack
-                    as specified in pydata.list
-    -v | --vim      setup vim plugin management (Vundle) and YouCompleteMe
-                    autocompleter
-    -n | --nvim     setup neovim
-    -t | --theme    install a fork of Arc-theme and papirus-icon-theme
-    -a | --all      all of the above
-EOF
-}
-
-readonly OPTS=`getopt -o acgeihvnt --long all,core,google,env,i3,help,vim,nvim,theme  -n 'bootstrap.sh' -- "$@"`
-
-if [ $? != 0 ] ; then echo "Failed to parse options." >&2; exit 1; fi
-eval set -- "$OPTS"
-
-while true
-do
-    case "$1" in
-        -a|--all)
-            install_core
-            install_google
-            setup_env
-            setup_i3
-            setup_vim
-            setup_theme
-            shift
-            ;;
-        -c|--core)
-            install_core
-            shift
-            ;;
-        -g|--google)
-            install_google
-            shift
-            ;;
-        -e|--env)
-            setup_env
-            shift
-            ;;
-        -i|--i3)
-            setup_i3
-            shift
-            ;;
-        -h|--help)
-            show_help
-            shift
-            ;;
-        -v|--vim)
-            setup_vim
-            shift
-            ;;
-        -n|--nvim)
-            setup_neovim
-            shift
-            ;;
-        -t|--theme)
-            setup_theme
-            shift
-            ;;
-        * )
-            break
-            ;;
-    esac
+# shellcheck source=lib/common.sh
+source "$SCRIPT_DIR/lib/common.sh"
+for _m in "$SCRIPT_DIR"/modules/*.sh; do
+    # shellcheck disable=SC1090
+    source "$_m"
 done
+unset _m
 
+trap 'die "failed at line $LINENO: $BASH_COMMAND"' ERR
+
+usage() {
+    cat <<USAGE
+Usage: $0 [--profile workstation|server] [--dry-run] OPTION...
+
+Bootstraps a fresh Ubuntu install. The environment is detected as workstation
+(graphical target), server, or container; steps that do not apply to it are
+skipped. Use --profile to override the detection.
+
+Options:
+  -c, --core            build dependencies, bioinformatics tools, base prerequisites
+  -t, --tools           command-line tools (fzf, ripgrep, fd, bat, eza, tldr, ncdu)
+  -r, --runtimes        npm, uv, mamba (Miniforge)
+  -m, --tmux            tmux, TPM and the tracked config (symlinked)
+  -n, --nvim            neovim and its config
+  -s, --server          nfs, postgresql, docker, nginx
+  -g, --google          Google Chrome beta                 (workstation only)
+  -y, --hypr            Hyprland from Ubuntu packages      (workstation only)
+      --hypr-jakoolit   Hyprland via JaKooLit's installer  (workstation only)
+      --services DIR    autossh tunnels from DIR/*.env     (never part of --all)
+  -a, --all             everything applicable to the detected profile
+      --profile P       force profile: workstation, server or container
+      --dry-run         print commands instead of running them
+  -h, --help            show this help
+USAGE
+}
+
+# module name -> profiles it applies to
+declare -A APPLIES=(
+    [core]="workstation server container"
+    [tools]="workstation server container"
+    [runtimes]="workstation server container"
+    [tmux]="workstation server container"
+    [nvim]="workstation server container"
+    [server]="server workstation container"
+    [chrome]="workstation"
+    [hypr]="workstation"
+    [hypr_jakoolit]="workstation"
+    [services]="workstation server"
+)
+# Execution order; core goes first because it installs prerequisites the others use.
+# --all selects everything except the opt-in modules below.
+readonly ORDER=(core tools runtimes tmux nvim server chrome hypr hypr_jakoolit services)
+readonly OPT_IN=" hypr_jakoolit services "
+
+applies() { [[ " ${APPLIES[$1]} " == *" $PROFILE "* ]]; }
+
+declare -A SELECTED=()
+enqueue() { SELECTED[$1]=1; }
+
+main() {
+    local want_all=0
+    PROFILE=${PROFILE:-}
+    SERVICES_DIR=        # consumed by module_services
+
+    local opts
+    opts=$(getopt -n bootstrap.sh -o acthrmnsgy -l all,core,tools,help,runtimes,tmux,nvim,server,google,hypr,hypr-jakoolit,services:,profile:,dry-run -- "$@") || { usage >&2; exit 2; }
+    eval set -- "$opts"
+
+    while true; do
+        case $1 in
+            -a|--all)      want_all=1 ;;
+            -c|--core)     enqueue core ;;
+            -t|--tools)    enqueue tools ;;
+            -r|--runtimes) enqueue runtimes ;;
+            -m|--tmux)     enqueue tmux ;;
+            -n|--nvim)     enqueue nvim ;;
+            -s|--server)   enqueue server ;;
+            -g|--google)   enqueue chrome ;;
+            -y|--hypr)     enqueue hypr ;;
+            --hypr-jakoolit) enqueue hypr_jakoolit ;;
+            --services)    enqueue services; SERVICES_DIR=$2; shift ;;
+            --profile)     PROFILE=$2; shift ;;
+            --dry-run)     DRY_RUN=1 ;;
+            -h|--help)     usage; exit 0 ;;
+            --)            shift; break ;;
+        esac
+        shift
+    done
+
+    ((want_all || ${#SELECTED[@]})) || { usage >&2; exit 2; }
+
+    if ((EUID == 0)) && [[ $(detect_profile) != container ]] && [[ ${BOOTSTRAP_ALLOW_ROOT:-0} != 1 ]]; then
+        die "do not run as root (user-level setup would target root's home); set BOOTSTRAP_ALLOW_ROOT=1 to override"
+    fi
+    if ((EUID != 0)) && ((! DRY_RUN)); then
+        have sudo || die "sudo is required"
+        sudo -v
+    fi
+    [[ $(. /etc/os-release && echo "$ID") == ubuntu ]] || warn "not Ubuntu; packages and PPAs may not be available"
+
+    PROFILE=$(detect_profile)
+    case $PROFILE in workstation|server|container) ;; *) die "invalid profile: $PROFILE" ;; esac
+    log "Profile: $PROFILE"
+
+    local m
+    for m in "${ORDER[@]}"; do
+        if ((want_all)) && [[ $OPT_IN != *" $m "* ]]; then enqueue "$m"; fi
+        [[ -n ${SELECTED[$m]:-} ]] || continue
+        if applies "$m"; then
+            "module_$m"
+        elif ((want_all)); then
+            log "Skipping $m (not applicable to $PROFILE)"
+        else
+            warn "Skipping $m: not applicable to profile '$PROFILE' (use --profile to override)"
+        fi
+    done
+    log "Done"
+}
+
+main "$@"
