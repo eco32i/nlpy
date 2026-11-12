@@ -1,0 +1,14 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y shellcheck
+      - run: bash -n scripts/bootstrap.sh && shellcheck -x scripts/bootstrap.sh scripts/lib/*.sh scripts/modules/*.sh config/bin/tmux-copy tests/*.sh
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: tests/run.sh

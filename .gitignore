@@ -1,2 +1,5 @@
 *.local
 .ipynb_checkpoints
+*.env
+!tunnel.env.example
+config/tmux/plugins/
