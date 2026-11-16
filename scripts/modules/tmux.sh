@@ -22,8 +22,17 @@ module_tmux() {
     fi
 
     log "Installing tmux plugins"
-    # TPM reads the plugin list from the config file and clones each plugin.
-    run env TMUX_PLUGIN_MANAGER_PATH="$conf_dir/plugins/" "$conf_dir/plugins/tpm/bin/install_plugins"
+    # TPM's install script reads TMUX_PLUGIN_MANAGER_PATH from a running tmux
+    # server, which doesn't exist on a headless box. Start a throwaway server on
+    # a private socket (loading our config, whose last line runs tpm and sets
+    # the variable), install, then kill it.
+    # shellcheck disable=SC2016  # $1/$2/$TMUX_TMPDIR must expand in the inner shell
+    run env TMUX_TMPDIR="$(mktemp -d)" bash -c '
+        conf=$1; tpm=$2
+        trap "tmux kill-server 2>/dev/null; rm -rf \"$TMUX_TMPDIR\"" EXIT
+        tmux -f "$conf" new-session -d -s tpm-bootstrap
+        "$tpm/bin/install_plugins"
+    ' _ "$conf_dir/tmux.conf" "$conf_dir/plugins/tpm"
 
     if is_gui_profile; then
         warn "The status bar uses powerline glyphs: set a Nerd Font in your terminal (https://www.nerdfonts.com)"
