@@ -27,7 +27,7 @@ module_tmux() {
     # a private socket (loading our config, whose last line runs tpm and sets
     # the variable), install, then kill it.
     # shellcheck disable=SC2016  # $1/$2/$TMUX_TMPDIR must expand in the inner shell
-    run env TMUX_TMPDIR="$(mktemp -d)" bash -c '
+    run env -u TMUX -u TMUX_PANE TMUX_TMPDIR="$(mktemp -d)" bash -c '
         conf=$1; tpm=$2
         trap "tmux kill-server 2>/dev/null; rm -rf \"$TMUX_TMPDIR\"" EXIT
         tmux -f "$conf" new-session -d -s tpm-bootstrap
